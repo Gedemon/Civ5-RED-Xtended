@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+<!-- English / US -->
+	<Language_en_US>
+		
+		<!-- Replaced texts -->
+
+		<Replace Tag="TXT_KEY_UNIT_ARTILLERY">
+			<Text>Howitzer-Gun</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_ARTILLERY">
+			<Text>Howitzers fire projectiles at relatively high trajectories, with a steep angle of descent, making them usefull against fortified positions and cities defense, while allowing indirect fire above obstacle. Their HE ammo give them a bonus against infantry units.</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_AT_GUN">
+			<Text>Field Gun</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_ANTI_TANK_GUN">
+			<Text>Field Guns fire smaller shells with higher velocities and flatter trajectories than Howitzers. Combined with armor-piercing ammo they can inflict great casualties on armor units.</Text>
+		</Replace>
+		
+		<Replace Tag="TXT_KEY_UNIT_HELP_ANTI_AIRCRAFT_GUN">
+			<Text>Anti-Aircraft Artillery are guns with a high muzzle velocity – allowing the projectiles to reach greater altitudes – and a high rate of fire, that can also be used defensively against armor units.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_BOMBER">
+			<Text>Aircraft specialized in bombarding enemy targets. Strong against Cities, they lack precision when bombing Units.</Text>
+		</Replace>
+
+		
+		<Replace Tag="TXT_KEY_UNIT_PORTUGUESE_NAU">
+			<Text>Galleon</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_PORTUGUESE_NAU">
+			<Text>The Galleon is the first ranged naval unit that can enter ocean.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_PORTUGUESE_NAU_STRATEGY">
+			<Text>The Galleon is the first ranged naval unit that can enter ocean.</Text>
+		</Replace>
+		
+		<!-- New texts -->
+
+		<Replace Tag="TXT_KEY_UNIT_SPECIAL_FORCES">
+			<Text>Special Forces</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_LIGHT_TANK">
+			<Text>Light Tank</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HEAVY_TANK">
+			<Text>Heavy Tank</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_ATTACK_AIRCRAFT">
+			<Text>Attack Aircraft</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HEAVY_BOMBER">
+			<Text>Strategic Bomber</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_CRUISER">
+			<Text>Cruiser</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_DREADNOUGHT">
+			<Text>Dreadnought</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_RIFLED_CANNON">
+			<Text>Rifled Cannon</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_LINE_INFANTRY">
+			<Text>Line Infantry</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_ARMORED_CRUISER">
+			<Text>Armored Cruiser</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_MAIN_BATTLE_TANK">
+			<Text>Main Battle Tank</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_CHARIOT">
+			<Text>Chariot</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_WAR_GALLEY">
+			<Text>Galley</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_HELP_HEAVY_BOMBER">
+			<Text>Long range and well armed bombers with large payload that can deal a lot of damage to cities, but very imprecise against units.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_ATTACK_AIRCRAFT">
+			<Text>Light aircrafts used for ground attack, they have a short range and are weak to enemy fighters, but they are your best choice to safely take out enemy armored vehicules.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_HEAVY_TANK">
+			<Text>Large and heavy armored tanks, they are very strong but slow and their size make them easy target for air attacks.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_LIGHT_TANK">
+			<Text>Light armored and fast moving tanks, good for scouting.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_CRUISER">
+			<Text>Smaller than Battleships but larger than Destroyers, Cruisers have a well balanced combination of speed, range and firepower.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_DREADNOUGHT">
+			<Text>The dreadnought was the first type of battleship with an "all-big-gun" armament scheme and steam turbine propulsion.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_HELP_RIFLED_CANNON">
+			<Text>Siege unit between Cannon and Artillery.</Text>
+		</Replace>
+		
+	</Language_en_US>
+<!-- German -->
+	<Language_DE_DE>
+	</Language_DE_DE>
+<!-- Spanish -->
+	<Language_ES_ES>
+	</Language_ES_ES>
+<!-- French -->
+	<Language_FR_FR>
+	</Language_FR_FR>
+<!-- Italian -->
+	<Language_IT_IT>
+	</Language_IT_IT>  
+</GameData>

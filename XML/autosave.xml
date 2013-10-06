@@ -1,0 +1,470 @@
+<GameData>
+  <Units>
+    <Update>
+      <Set PrereqTech="TECH_COMPUTERS" />
+      <Where Type="UNIT_NUCLEAR_SUBMARINE" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_RADIO" />
+      <Where Type="UNIT_DESTROYER" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_STEALTH" />
+      <Where Type="UNIT_JET_FIGHTER" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_ROCKETRY" />
+      <Where Type="UNIT_GUIDED_MISSILE" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_MOBILE_TACTICS" />
+      <Where Type="UNIT_MODERN_ARMOR" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_MOBILE_TACTICS" />
+      <Where Type="UNIT_HELICOPTER_GUNSHIP" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_COMPUTERS" />
+      <Where Type="UNIT_MOBILE_SAM" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_ADVANCED_BALLISTICS" />
+      <Where Type="UNIT_ROCKET_ARTILLERY" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_BALLISTICS" />
+      <Where Type="UNIT_ARTILLERY" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_COMBINED_ARMS" />
+      <Where Type="UNIT_INFANTRY" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_RIFLING" />
+      <Where Type="UNIT_CAVALRY" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_RIFLING" />
+      <Where Type="UNIT_RUSSIAN_COSSACK" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_COMBINED_ARMS" />
+      <Where Type="UNIT_BRAZILIAN_PRACINHA" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_RIFLING" />
+      <Where Type="UNIT_BERBER_CAVALRY" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_RIFLING" />
+      <Where Type="UNIT_SHOSHONE_COMANCHE_RIDERS" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_ROCKETRY" />
+      <Where Type="UNIT_BAZOOKA" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_RIFLING" />
+      <Where Type="UNIT_AUSTRIAN_HUSSAR" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_COMBINED_ARMS" />
+      <Where Type="UNIT_MARINE" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_REPLACEABLE_PARTS" />
+      <Where Type="UNIT_WWI_TANK" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_REPLACEABLE_PARTS" />
+      <Where Type="UNIT_MACHINE_GUN" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_STEAM_POWER" />
+      <Where Type="UNIT_GATLINGGUN" />
+    </Update>
+  </Units>
+  <Resources>
+    <Update>
+      <Set TechReveal="TECH_STEEL" />
+      <Where Type="RESOURCE_COAL" />
+    </Update>
+  </Resources>
+  <Technologies>
+    <Update>
+      <Set Description="TXT_KEY_TECH_PRINTING_PRESS_DESC" Civilopedia="TXT_KEY_TECH_PRINTING_PRESS_CIV" />
+      <Where Type="TECH_PRINTING_PRESS" />
+    </Update>
+    <Update>
+      <Set GridY="7" />
+      <Where Type="TECH_METALLURGY" />
+    </Update>
+    <Update>
+      <Set Description="TXT_KEY_TECH_INDUSTRIALIZATION_DESC" Civilopedia="TXT_KEY_TECH_INDUSTRIALIZATION_CIV" GridX="11" />
+      <Where Type="TECH_INDUSTRIALIZATION" />
+    </Update>
+    <Update>
+      <Set GridX="10" GridY="7" />
+      <Where Type="TECH_RIFLING" />
+    </Update>
+    <Update>
+      <Set GridY="7" />
+      <Where Type="TECH_MILITARY_SCIENCE" />
+    </Update>
+    <Update>
+      <Set GridY="3" />
+      <Where Type="TECH_BIOLOGY" />
+    </Update>
+    <Update>
+      <Set GridY="1" />
+      <Where Type="TECH_ELECTRICITY" />
+    </Update>
+    <Update>
+      <Set Description="TXT_KEY_TECH_DYNAMITE_DESC" Civilopedia="TXT_KEY_TECH_DYNAMITE_CIV" GridY="9" />
+      <Where Type="TECH_DYNAMITE" />
+    </Update>
+    <Update>
+      <Set GridX="12" GridY="3" />
+      <Where Type="TECH_REFRIGERATION" />
+    </Update>
+    <Update>
+      <Set Description="TXT_KEY_TECH_RADIO_DESC" Civilopedia="TXT_KEY_TECH_RADIO_CIV" GridX="12" GridY="1" />
+      <Where Type="TECH_RADIO" />
+    </Update>
+    <Update>
+      <Set GridX="12" GridY="7" />
+      <Where Type="TECH_REPLACEABLE_PARTS" />
+    </Update>
+    <Update>
+      <Set GridX="12" />
+      <Where Type="TECH_FLIGHT" />
+    </Update>
+    <Update>
+      <Set Era="ERA_INDUSTRIAL" GridX="9" GridY="5" />
+      <Where Type="TECH_RAILROAD" />
+    </Update>
+    <Update>
+      <Set GridX="13" />
+      <Where Type="TECH_PLASTIC" />
+    </Update>
+    <Update>
+      <Set GridX="13" GridY="6" />
+      <Where Type="TECH_ELECTRONICS" />
+    </Update>
+    <Update>
+      <Set Description="TXT_KEY_TECH_BALLISTICS_DESC" Civilopedia="TXT_KEY_TECH_BALLISTICS_CIV" Era="ERA_INDUSTRIAL" GridX="11" GridY="7" />
+      <Where Type="TECH_BALLISTICS" />
+    </Update>
+    <Update>
+      <Set Era="ERA_INDUSTRIAL" GridX="11" GridY="3" />
+      <Where Type="TECH_COMBUSTION" />
+    </Update>
+    <Update>
+      <Set GridX="14" />
+      <Where Type="TECH_PENICILIN" />
+    </Update>
+    <Update>
+      <Set Era="ERA_MODERN" />
+      <Where Type="TECH_ATOMIC_THEORY" />
+    </Update>
+    <Update>
+      <Set GridX="14" />
+      <Where Type="TECH_RADAR" />
+    </Update>
+    <Update>
+      <Set GridX="14" />
+      <Where Type="TECH_COMBINED_ARMS" />
+    </Update>
+    <Update>
+      <Set GridX="15" />
+      <Where Type="TECH_ECOLOGY" />
+    </Update>
+    <Update>
+      <Set GridX="15" />
+      <Where Type="TECH_NUCLEAR_FISSION" />
+    </Update>
+    <Update>
+      <Set Description="TXT_KEY_TECH_ROCKETRY_DESC" Civilopedia="TXT_KEY_TECH_ROCKETRY_CIV" GridX="15" GridY="6" />
+      <Where Type="TECH_ROCKETRY" />
+    </Update>
+    <Update>
+      <Set Description="TXT_KEY_TECH_COMPUTERS_DESC" Civilopedia="TXT_KEY_TECH_COMPUTERS_CIV" Era="ERA_FUTURE" GridX="16" GridY="3" />
+      <Where Type="TECH_COMPUTERS" />
+    </Update>
+    <Update>
+      <Set GridX="16" />
+      <Where Type="TECH_TELECOM" />
+    </Update>
+    <Update>
+      <Set GridX="16" GridY="7" />
+      <Where Type="TECH_MOBILE_TACTICS" />
+    </Update>
+    <Update>
+      <Set GridX="17" GridY="3" />
+      <Where Type="TECH_ADVANCED_BALLISTICS" />
+    </Update>
+    <Update>
+      <Set GridX="16" />
+      <Where Type="TECH_SATELLITES" />
+    </Update>
+    <Update>
+      <Set GridX="17" GridY="4" />
+      <Where Type="TECH_ROBOTICS" />
+    </Update>
+    <Update>
+      <Set GridX="17" GridY="6" />
+      <Where Type="TECH_LASERS" />
+    </Update>
+    <Update>
+      <Set GridX="17" GridY="1" />
+      <Where Type="TECH_INTERNET" />
+    </Update>
+    <Update>
+      <Set GridX="18" />
+      <Where Type="TECH_GLOBALIZATION" />
+    </Update>
+    <Update>
+      <Set GridX="18" />
+      <Where Type="TECH_PARTICLE_PHYSICS" />
+    </Update>
+    <Update>
+      <Set GridX="18" GridY="4" />
+      <Where Type="TECH_NUCLEAR_FUSION" />
+    </Update>
+    <Update>
+      <Set GridX="18" GridY="5" />
+      <Where Type="TECH_NANOTECHNOLOGY" />
+    </Update>
+    <Update>
+      <Set GridX="18" />
+      <Where Type="TECH_STEALTH" />
+    </Update>
+    <Update>
+      <Set Description="TXT_KEY_TECH_FUTURE_TECH_DESC" Civilopedia="TXT_KEY_TECH_FUTURE_TECH_CIV" GridX="19" />
+      <Where Type="TECH_FUTURE_TECH" />
+    </Update>
+  </Technologies>
+  <Technology_PrereqTechs>
+    <Delete TechType="TECH_THE_WHEEL" PrereqTech="TECH_ANIMAL_HUSBANDRY" />
+    <Delete TechType="TECH_COMPASS" PrereqTech="TECH_THEOLOGY" />
+    <Delete TechType="TECH_EDUCATION" PrereqTech="TECH_CIVIL_SERVICE" />
+    <Delete TechType="TECH_MACHINERY" PrereqTech="TECH_GUILDS" />
+    <Delete TechType="TECH_METALLURGY" PrereqTech="TECH_GUNPOWDER" />
+    <Delete TechType="TECH_INDUSTRIALIZATION" PrereqTech="TECH_ECONOMICS" />
+    <Delete TechType="TECH_RIFLING" PrereqTech="TECH_ECONOMICS" />
+    <Delete TechType="TECH_RIFLING" PrereqTech="TECH_METALLURGY" />
+    <Delete TechType="TECH_STEAM_POWER" PrereqTech="TECH_RIFLING" />
+    <Delete TechType="TECH_STEAM_POWER" PrereqTech="TECH_INDUSTRIALIZATION" />
+    <Delete TechType="TECH_REPLACEABLE_PARTS" PrereqTech="TECH_STEAM_POWER" />
+    <Delete TechType="TECH_REPLACEABLE_PARTS" PrereqTech="TECH_ELECTRICITY" />
+    <Delete TechType="TECH_RAILROAD" PrereqTech="TECH_STEAM_POWER" />
+    <Delete TechType="TECH_RAILROAD" PrereqTech="TECH_DYNAMITE" />
+    <Delete TechType="TECH_REFRIGERATION" PrereqTech="TECH_ELECTRICITY" />
+    <Delete TechType="TECH_REFRIGERATION" PrereqTech="TECH_BIOLOGY" />
+    <Delete TechType="TECH_FLIGHT" PrereqTech="TECH_STEAM_POWER" />
+    <Delete TechType="TECH_BALLISTICS" PrereqTech="TECH_RAILROAD" />
+    <Delete TechType="TECH_BALLISTICS" PrereqTech="TECH_FLIGHT" />
+    <Delete TechType="TECH_COMBUSTION" PrereqTech="TECH_RAILROAD" />
+    <Delete TechType="TECH_PLASTIC" PrereqTech="TECH_REPLACEABLE_PARTS" />
+    <Delete TechType="TECH_PENICILIN" PrereqTech="TECH_REFRIGERATION" />
+    <Delete TechType="TECH_ELECTRONICS" PrereqTech="TECH_FLIGHT" />
+    <Delete TechType="TECH_RADAR" PrereqTech="TECH_BALLISTICS" />
+    <Delete TechType="TECH_COMBINED_ARMS" PrereqTech="TECH_BALLISTICS" />
+    <Delete TechType="TECH_COMBINED_ARMS" PrereqTech="TECH_COMBUSTION" />
+    <Delete TechType="TECH_ATOMIC_THEORY" PrereqTech="TECH_PLASTIC" />
+    <Delete TechType="TECH_ATOMIC_THEORY" PrereqTech="TECH_ELECTRONICS" />
+    <Delete TechType="TECH_ECOLOGY" PrereqTech="TECH_ATOMIC_THEORY" />
+    <Delete TechType="TECH_NUCLEAR_FISSION" PrereqTech="TECH_RADAR" />
+    <Delete TechType="TECH_COMPUTERS" PrereqTech="TECH_RADAR" />
+    <Delete TechType="TECH_COMPUTERS" PrereqTech="TECH_COMBINED_ARMS" />
+    <Delete TechType="TECH_MOBILE_TACTICS" PrereqTech="TECH_ECOLOGY" />
+    <Delete TechType="TECH_MOBILE_TACTICS" PrereqTech="TECH_NUCLEAR_FISSION" />
+    <Delete TechType="TECH_ADVANCED_BALLISTICS" PrereqTech="TECH_NUCLEAR_FISSION" />
+    <Delete TechType="TECH_ADVANCED_BALLISTICS" PrereqTech="TECH_ROCKETRY" />
+    <Delete TechType="TECH_ROBOTICS" PrereqTech="TECH_ROCKETRY" />
+    <Delete TechType="TECH_GLOBALIZATION" PrereqTech="TECH_TELECOM" />
+    <Delete TechType="TECH_PARTICLE_PHYSICS" PrereqTech="TECH_TELECOM" />
+    <Delete TechType="TECH_PARTICLE_PHYSICS" PrereqTech="TECH_MOBILE_TACTICS" />
+    <Delete TechType="TECH_NUCLEAR_FUSION" PrereqTech="TECH_ADVANCED_BALLISTICS" />
+    <Delete TechType="TECH_NUCLEAR_FUSION" PrereqTech="TECH_SATELLITES" />
+    <Delete TechType="TECH_NUCLEAR_FUSION" PrereqTech="TECH_ROBOTICS" />
+    <Delete TechType="TECH_STEALTH" PrereqTech="TECH_ROBOTICS" />
+    <Delete TechType="TECH_NANOTECHNOLOGY" PrereqTech="TECH_ROBOTICS" />
+    <Delete TechType="TECH_FUTURE_TECH" PrereqTech="TECH_INTERNET" />
+    <Row>
+      <TechType>TECH_TRAPPING</TechType>
+      <PrereqTech>TECH_ARCHERY</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_NAVIGATION</TechType>
+      <PrereqTech>TECH_GUNPOWDER</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_RAILROAD</TechType>
+      <PrereqTech>TECH_METALLURGY</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_RAILROAD</TechType>
+      <PrereqTech>TECH_ECONOMICS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_BALLISTICS</TechType>
+      <PrereqTech>TECH_DYNAMITE</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_BALLISTICS</TechType>
+      <PrereqTech>TECH_RIFLING</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_INDUSTRIALIZATION</TechType>
+      <PrereqTech>TECH_STEAM_POWER</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_STEAM_POWER</TechType>
+      <PrereqTech>TECH_RAILROAD</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_RIFLING</TechType>
+      <PrereqTech>TECH_MILITARY_SCIENCE</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_BALLISTICS</TechType>
+      <PrereqTech>TECH_STEAM_POWER</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_COMBUSTION</TechType>
+      <PrereqTech>TECH_BIOLOGY</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_COMBUSTION</TechType>
+      <PrereqTech>TECH_STEAM_POWER</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_STEAM_POWER</TechType>
+      <PrereqTech>TECH_FERTILIZER</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_COMBUSTION</TechType>
+      <PrereqTech>TECH_ELECTRICITY</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_FLIGHT</TechType>
+      <PrereqTech>TECH_BALLISTICS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_FLIGHT</TechType>
+      <PrereqTech>TECH_COMBUSTION</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_FLIGHT</TechType>
+      <PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_REPLACEABLE_PARTS</TechType>
+      <PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_REFRIGERATION</TechType>
+      <PrereqTech>TECH_COMBUSTION</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_RADIO</TechType>
+      <PrereqTech>TECH_COMBUSTION</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_RADAR</TechType>
+      <PrereqTech>TECH_FLIGHT</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_COMBINED_ARMS</TechType>
+      <PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_COMBINED_ARMS</TechType>
+      <PrereqTech>TECH_ELECTRONICS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_ELECTRONICS</TechType>
+      <PrereqTech>TECH_RADIO</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_ROCKETRY</TechType>
+      <PrereqTech>TECH_COMBINED_ARMS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_ATOMIC_THEORY</TechType>
+      <PrereqTech>TECH_REFRIGERATION</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_PLASTIC</TechType>
+      <PrereqTech>TECH_REFRIGERATION</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_NUCLEAR_FISSION</TechType>
+      <PrereqTech>TECH_PLASTIC</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_COMPUTERS</TechType>
+      <PrereqTech>TECH_NUCLEAR_FISSION</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_MOBILE_TACTICS</TechType>
+      <PrereqTech>TECH_ROCKETRY</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_COMPUTERS</TechType>
+      <PrereqTech>TECH_ROCKETRY</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_INTERNET</TechType>
+      <PrereqTech>TECH_COMPUTERS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_ADVANCED_BALLISTICS</TechType>
+      <PrereqTech>TECH_COMPUTERS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_ADVANCED_BALLISTICS</TechType>
+      <PrereqTech>TECH_SATELLITES</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_LASERS</TechType>
+      <PrereqTech>TECH_MOBILE_TACTICS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_NANOTECHNOLOGY</TechType>
+      <PrereqTech>TECH_LASERS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_NUCLEAR_FUSION</TechType>
+      <PrereqTech>TECH_LASERS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_PARTICLE_PHYSICS</TechType>
+      <PrereqTech>TECH_LASERS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_GLOBALIZATION</TechType>
+      <PrereqTech>TECH_INTERNET</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_PARTICLE_PHYSICS</TechType>
+      <PrereqTech>TECH_ROBOTICS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_STEALTH</TechType>
+      <PrereqTech>TECH_ADVANCED_BALLISTICS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_MILITARY_SCIENCE</TechType>
+      <PrereqTech>TECH_ECONOMICS</PrereqTech>
+    </Row>
+  </Technology_PrereqTechs>
+  <Buildings>
+    <Update>
+      <Set PrereqTech="TECH_FLIGHT" />
+      <Where Type="BUILDING_MILITARY_BASE" />
+    </Update>
+  </Buildings>
+</GameData>
