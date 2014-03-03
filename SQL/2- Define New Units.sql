@@ -1,6 +1,6 @@
 /*
 
-	R.E.D. WWII Edition
+	R.E.D. Xtended
 	Class template units configuration file
 	by Gedemon (2013)
 
@@ -19,37 +19,53 @@ INSERT INTO UnitConfiguration
 --								Technology					Model file																		Figures						Scale							RangedCombat	Move			Range			IconIndex						FlagAtlas											Embarked 
 --		Key Name									Variation								Template Unit			Art Template					Formation					Combat Class	Combat			Cost			Immobile		FlagIndex		IconAtlas													SV Icon
 
-SELECT	'WAR_GALLEY',			'POTTERY',			'',		'battle_galley',				'GALLEY',				'GALLEY',				3,		'Flotilla',			0.06,	NULL,			7,		NULL,	 30,	4,		NULL,	NULL,	NULL,	0,		'WAR_GALLEY_ATLAS',		NULL,								NULL,			NULL	UNION ALL
+SELECT	'WAR_GALLEY',			'POTTERY',			'',		'battle_galley',				'GALLEY',				'GALLEY',				3,		'Flotilla',			0.06,	NULL,			7,		NULL,	 30,	4,		NULL,	NULL,	NULL,	28,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
 
-SELECT	'CHARIOT',				'THE_WHEEL',		'',		'Chariot_France',				'HORSEMAN',				'HORSEMAN',				3,		'ChariotElephant',	0.075,	NULL,			10,		NULL,	 28,	4,		NULL,	NULL,	NULL,	NULL,	NULL,					NULL,								NULL,			NULL	UNION ALL
+SELECT	'CHARIOT',				'THE_WHEEL',		'',		'Chariot_France',				'HORSEMAN',				'HORSEMAN',				3,		'ChariotElephant',	0.075,	NULL,			10,		NULL,	 56,	4,		NULL,	NULL,	NULL,	NULL,	NULL,					NULL,								NULL,			NULL	UNION ALL
 
-SELECT	'EXPLORER',				'COMPASS',			'',		'conquistador_musket_1',		'MUSKETMAN',			'U_AMERICAN_MINUTEMAN',	1,		'Scout',			NULL,	'RECON',		12,		NULL,	175,	NULL,	NULL,	NULL,	1,		NULL,	NULL,					'DLC02_UNIT_FLAG_ATLAS',			NULL,			NULL	UNION ALL
+SELECT	'EXPLORER',				'COMPASS',			'',		'conquistador_musket_1',		'MUSKETMAN',			'U_AMERICAN_MINUTEMAN',	1,		'Scout',			NULL,	'RECON',		12,		NULL,	120,	NULL,	NULL,	NULL,	1,		20,		'RED_UNIT_ICONS',		'DLC02_UNIT_FLAG_ATLAS',			NULL,			NULL	UNION ALL
 SELECT	'EXPLORER',				NULL,				'_V2',	'conquistador_musket_2',		'MUSKETMAN',			'U_AMERICAN_MINUTEMAN',	2,		NULL,				NULL,	NULL,			NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,					NULL,								NULL,			NULL	UNION ALL
 SELECT	'EXPLORER',				NULL,				'_V3',	'conquistador_musket_3',		'MUSKETMAN',			'U_AMERICAN_MINUTEMAN',	2,		NULL,				NULL,	NULL,			NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,					NULL,								NULL,			NULL	UNION ALL
 SELECT	'EXPLORER',				NULL,				'_V4',	'conquistador_musket_4',		'MUSKETMAN',			'U_AMERICAN_MINUTEMAN',	1,		NULL,				NULL,	NULL,			NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,					NULL,								NULL,			NULL	UNION ALL
 
---SELECT	'GALLEON',				'ASTRONOMY',		'',		'U_Spanish_Galleon',			'ENGLISH_SHIPOFTHELINE','U_SPANISH_GALLEON',	NULL,	NULL,				0.10,	NULL,			18,		17,		175,	3,		NULL,	NULL,	NULL,	0,		'WAR_GALLEY_ATLAS',		NULL,								NULL,			NULL	UNION ALL
+SELECT	'CULVERIN',				'GUNPOWDER',		'',		'culverin',						'CANNON',				'CANNON',				NULL,	NULL,				NULL,	NULL,			14,		20,		150,	NULL,	NULL,	NULL,	NULL,	25,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
+SELECT	'BOMBARD',				'PHYSICS',			'',		'bombard_big',					'CANNON',				'CANNON',				NULL,	NULL,				NULL,	NULL,			12,		18,		150,	NULL,	NULL,	NULL,	NULL,	24,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
 
-SELECT	'LINE_INFANTRY',		'CHEMISTRY',		'',		'civ5_genmm1',					'RIFLEMAN',				'RIFLEMAN',				3,		NULL,				NULL,	NULL,			28,		NULL,	185,	NULL,	NULL,	NULL,	8,		1,		'HARALD_UNIT_ATLAS',	'EXPANSION_UNIT_FLAG_ATLAS',		NULL,			NULL	UNION ALL
+--								Technology					Model file																		Figures						Scale							RangedCombat	Move			Range			IconIndex						FlagAtlas											Embarked 
+--		Key Name									Variation								Template Unit			Art Template					Formation					Combat Class	Combat			Cost			Immobile		FlagIndex		IconAtlas													SV Icon
+
+SELECT	'LINE_INFANTRY',		'CHEMISTRY',		'',		'civ5_genmm1',					'RIFLEMAN',				'RIFLEMAN',				3,		NULL,				NULL,	NULL,			28,		NULL,	180,	NULL,	NULL,	NULL,	8,		3,		'EXPANSION_UNIT_ATLAS_1','EXPANSION_UNIT_FLAG_ATLAS',		NULL,			NULL	UNION ALL
 SELECT	'LINE_INFANTRY',		NULL,				'_V2',	'civ5_genmm2',					'RIFLEMAN',				'RIFLEMAN',				4,		NULL,				NULL,	NULL,			NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,					NULL,								NULL,			NULL	UNION ALL
 SELECT	'LINE_INFANTRY',		NULL,				'_V3',	'civ5_genmm3',					'RIFLEMAN',				'RIFLEMAN',				3,		NULL,				NULL,	NULL,			NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,					NULL,								NULL,			NULL	UNION ALL
 SELECT	'LINE_INFANTRY',		NULL,				'_V1',	'civ5_genmm1',					'RIFLEMAN',				'RIFLEMAN',				3,		NULL,				NULL,	NULL,			NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,					NULL,								NULL,			NULL	UNION ALL
 SELECT	'LINE_INFANTRY',		NULL,				'_V2',	'civ5_genmm2',					'RIFLEMAN',				'RIFLEMAN',				3,		NULL,				NULL,	NULL,			NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,					NULL,								NULL,			NULL	UNION ALL
 SELECT	'LINE_INFANTRY',		NULL,				'_V3',	'civ5_genmm3',					'RIFLEMAN',				'RIFLEMAN',				3,		NULL,				NULL,	NULL,			NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,					NULL,								NULL,			NULL	UNION ALL
 
-SELECT	'RIFLED_CANNON',		'RIFLING',			'',		'Confederate_Artillery_Parrott','CANNON',				'CANNON',				NULL,	NULL,				NULL,	NULL,			17,		24,		210,	NULL,	NULL,	NULL,	2,		4,		'CIVIL_WAR_UNIT_ATLAS',	'CIVIL_WAR_UNIT_FLAG_ATLAS',		NULL,			NULL	UNION ALL
-SELECT	'ARMORED_CRUISER',		'STEAM_POWER',		'',		'Ironclad',						'FRIGATE',				'IRONCLAD',				NULL,	NULL,				NULL,	NULL,			40,		35,		300,	5,		NULL,	NULL,	NULL,	NULL,	NULL,					NULL,								NULL,			NULL	UNION ALL
+SELECT	'VOLLEY_GUN',			'CHEMISTRY',		'',		'VolleyGun',					'GATLINGGUN',			'GATLINGGUN',			NULL,	NULL,				NULL,	NULL,			20,		24,		190,	NULL,	NULL,	NULL,	NULL,	30,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
 
-/* need to change stats below ! */
-SELECT	'SPECIAL_FORCES',		'SATELLITES',		'',		'Paratrooper',					'PARATROOPER',			'PARATROOPER',			6,		'Scout',			NULL,	NULL,			32,		NULL,	340,	3,		NULL,	NULL,	NULL,	NULL,	NULL,					NULL,								NULL,			NULL	UNION ALL
-SELECT	'MOTORIZED_INFANTRY',	'COMBINED_ARMS',	'',		'M3A1HTGreenTC',				'MECHANIZED_INFANTRY',	'MECHANIZEDINFANTRY',	NULL,	NULL,				0.12,	NULL,			40,		NULL,	300,	4,		NULL,	NULL,	NULL,	NULL,	NULL,					NULL,								NULL,			NULL	UNION ALL
-SELECT	'LIGHT_TANK',			'COMBINED_ARMS',	'',		'LightTank_Generic',			'TANK',					'TANK',					NULL,	NULL,				NULL,	NULL,			40,		NULL,	300,	5,		NULL,	NULL,	NULL,	9,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
-SELECT	'MAIN_BATTLE_TANK',		'MOBILE_TACTICS',	'',		'T55GreenTC',					'TANK',					'TANK',					NULL,	NULL,				0.10,	NULL,			85,		NULL,	420,	6,		NULL,	NULL,	NULL,	NULL,	NULL,					NULL,								NULL,			NULL	UNION ALL
-SELECT	'EARLY_JET_FIGHTER',	'ROCKETRY',			'',		'MiG-15tc',						'FIGHTER',				'FIGHTER',				NULL,	NULL,				NULL,	NULL,			NULL,	70,		450,	NULL,	NULL,	12,		NULL,	NULL,	NULL,					NULL,								NULL,			NULL	UNION ALL
-SELECT	'ATTACK_AIRCRAFT',		'RADAR',			'',		'AttackAircraft_Generic',		'BOMBER',				'BOMBER',				6,		'FighterDiamond',	0.07,	NULL,			NULL,	30,		350,	NULL,	NULL,	8,		NULL,	5,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
-SELECT	'HEAVY_BOMBER',			'RADAR',			'',		'Bomber_Generic',				'BOMBER',				'BOMBER',				NULL,	NULL,				NULL,	NULL,			NULL,	70,		500,	NULL,	NULL,	16,		NULL,	42,		NULL,					NULL,								NULL,			NULL	UNION ALL
-SELECT	'CRUISER',				'ELECTRONICS',		'',		'Cruiser_Generic',				'BATTLESHIP',			'BATTLESHIP',			NULL,	NULL,				0.11,	NULL,			45,		30,		435,	6,		NULL,	NULL,	NULL,	10,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
-SELECT	'DREADNOUGHT',			'BALLISTICS',		'',		'Dreadnought_Generic',			'BATTLESHIP',			'BATTLESHIP',			NULL,	NULL,				0.10,	NULL,			50,		36,		525,	4,		NULL,	NULL,	NULL,	10,		NULL,					NULL,								NULL,			NULL	UNION ALL
+SELECT	'RIFLED_CANNON',		'RIFLING',			'',		'Confederate_Artillery_Parrott','CANNON',				'CANNON',				NULL,	NULL,				NULL,	NULL,			17,		24,		225,	NULL,	NULL,	NULL,	2,		4,		'CIVIL_WAR_UNIT_ATLAS',	'CIVIL_WAR_UNIT_FLAG_ATLAS',		NULL,			NULL	UNION ALL
+SELECT	'ARMORED_CRUISER',		'STEAM_POWER',		'',		'Ironclad',						'FRIGATE',				'IRONCLAD',				NULL,	NULL,				NULL,	NULL,			40,		0,		300,	5,		NULL,	NULL,	53,		10,		'UNIT_ATLAS_2',			'UNIT_FLAG_ATLAS',					NULL,			NULL	UNION ALL
+
+--								Technology					Model file																		Figures						Scale							RangedCombat	Move			Range			IconIndex						FlagAtlas											Embarked 
+--		Key Name									Variation								Template Unit			Art Template					Formation					Combat Class	Combat			Cost			Immobile		FlagIndex		IconAtlas													SV Icon
+
+SELECT	'CAVALRY_SCOUT',		'RIFLING',			'',		'Confederate_Cavalry_Pistol',	'CAVALRY',			'CONFEDERATE_CAVALRY_PISTOL',3,		NULL,				0.085,	'RECON',		20,		NULL,	NULL,	NULL,	NULL,	NULL,	48,		8,		'CIVIL_WAR_UNIT_ATLAS',	'UNIT_FLAG_ATLAS',					NULL,			NULL	UNION ALL
+SELECT	'SPECIAL_FORCES',		'BATTLESPACE',		'',		'Paratrooper',					'PARATROOPER',			'PARATROOPER',			6,		'Scout',			NULL,	NULL,			60,		NULL,	425,	3,		NULL,	NULL,	NULL,	14,		'UNIT_ATLAS_2',			NULL,								NULL,			NULL	UNION ALL
+SELECT	'MOTORIZED_INFANTRY',	'COMBINED_ARMS',	'',		'M3A1HTGreenTC',				'MECHANIZED_INFANTRY',	'MECHANIZEDINFANTRY',	NULL,	NULL,				0.12,	NULL,			65,		NULL,	375,	3,		NULL,	NULL,	NULL,	27,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
+SELECT	'LIGHT_TANK',			'COMBINED_ARMS',	'',		'LightTank_Generic',			'TANK',					'TANK',					2,		NULL,				0.105,	'RECON',		40,		NULL,	375,	5,		NULL,	NULL,	NULL,	9,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
+SELECT	'MAIN_BATTLE_TANK',		'MOBILE_TACTICS',	'',		'T55GreenTC',					'TANK',					'TANK',					NULL,	NULL,				0.10,	NULL,			100,	NULL,	400,	6,		NULL,	NULL,	58,		39,		'UNIT_ATLAS_2',			'UNIT_FLAG_ATLAS',					NULL,			NULL	UNION ALL
+SELECT	'EARLY_JET_FIGHTER',	'ROCKETRY',			'',		'MiG-15tc',						'FIGHTER',				'FIGHTER',				3,		NULL,				0.10,	NULL,			NULL,	55,		450,	NULL,	NULL,	10,		NULL,	17,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
+SELECT	'ATTACK_AIRCRAFT',		'RADAR',			'',		'AttackAircraft_Generic',		'BOMBER',				'BOMBER',				6,		'FighterDiamond',	0.07,	NULL,			NULL,	45,		350,	NULL,	NULL,	8,		NULL,	5,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
+SELECT	'HEAVY_BOMBER',			'RADAR',			'',		'Bomber_Generic',				'BOMBER',				'BOMBER',				NULL,	NULL,				NULL,	NULL,			NULL,	70,		475,	NULL,	NULL,	14,		NULL,	42,		NULL,					NULL,								NULL,			NULL	UNION ALL
+SELECT	'JET_BOMBER',			'SATELLITES',		'',		'B52',							'BOMBER',				'STEALTHBOMBER',		1,		NULL,				0.15,	NULL,			NULL,	80,		650,	NULL,	NULL,	20,		NULL,	15,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
+SELECT	'JET_ATTACK_AIRCRAFT',	'ADVANCED_BALLISTICS','',	'Su-25',						'BOMBER',				'JETFIGHTER',			2,		'FighterDiamond',	NULL,	NULL,			NULL,	70,		425,	NULL,	NULL,	10,		NULL,	16,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
+SELECT	'STEALTH_FIGHTER',		'STEALTH',			'',		'JetFighter',					'JET_FIGHTER',			'JETFIGHTER',			1,		NULL,				0.095,	NULL,			NULL,	90,		550,	NULL,	NULL,	14,		78,		31,		'UNIT_ATLAS_2',			'UNIT_FLAG_ATLAS',					NULL,			NULL	UNION ALL
+SELECT	'STRIKE_FIGHTER',		'BATTLESPACE',		'',		'TornadoGR1',					'JET_FIGHTER',			'JETFIGHTER',			NULL,	NULL,				NULL,	NULL,			NULL,	75,		NULL,	NULL,	NULL,	12,		NULL,	21,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
+SELECT	'DREADNOUGHT',			'BALLISTICS',		'',		'Dreadnought_Generic',			'BATTLESHIP',			'BATTLESHIP',			NULL,	NULL,				0.10,	NULL,			50,		50,		500,	3,		NULL,	NULL,	NULL,	22,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
+SELECT	'NUCLEAR_CARRIER',		'ADVANCED_BALLISTICS','',	'kuznetsov',					'CARRIER',				'CARRIER',				NULL,	NULL,				NULL,	NULL,			50,		NULL,	700,	NULL,	NULL,	NULL,	NULL,	18,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
+SELECT	'MISSILE_DESTROYER',	'COMPUTERS',		'',		'MissileCruiser',				'MISSILE_CRUISER',		'MISSILECRUISER',		NULL,	NULL,				0.10,	'NAVALMELEE',	60,		0,		NULL,	NULL,	NULL,	NULL,	NULL,	31,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
+SELECT	'ATTACK_SUBMARINE',		'COMPUTERS',		'',		'akula',						'NUCLEAR_SUBMARINE',	'NUCLEARSUBMARINE',		NULL,	NULL,				0.10,	NULL,			40,		80,		650,	NULL,	NULL,	NULL,	NULL,	29,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
+--SELECT	'CRUISER',			'ELECTRONICS',		'',		'Cruiser_Generic',				'BATTLESHIP',			'BATTLESHIP',			NULL,	NULL,				0.11,	NULL,			45,		30,		435,	6,		NULL,	NULL,	NULL,	10,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
 
 SELECT	'END_OF_INSERT',		NULL,				'',		NULL,							NULL,					NULL,					NULL,	NULL,				NULL,	NULL,			NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,					NULL,								NULL,			NULL;
 
@@ -267,10 +283,13 @@ INSERT INTO Unit_Flavors (UnitType, FlavorType, Flavor)
 	SELECT 'UNIT_' || UnitKey, FlavorType, Flavor
 	FROM Unit_Flavors JOIN UnitConfiguration ON  (UnitType= 'UNIT_' || UnitConfiguration.Template);
 	
--- first set the free promotion from master template...
+-- set the free promotion from master template...
 INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
 	SELECT 'UNIT_' || UnitKey, PromotionType
 	FROM Unit_FreePromotions JOIN UnitConfiguration ON (UnitType= 'UNIT_' || UnitConfiguration.Template);
+
+--
+DELETE FROM Unit_FreePromotions WHERE UnitType = (SELECT 'UNIT_' || UnitKey FROM UnitPromotions JOIN UnitConfiguration ON (UnitPromotions.Type = 'PROMOTION_' || UnitConfiguration.UnitKey));
 
 -- then replace the master template FreePromotion if there is one specific to the class
 REPLACE INTO Unit_FreePromotions (UnitType, PromotionType)

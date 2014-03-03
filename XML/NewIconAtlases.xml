@@ -39,41 +39,6 @@
 			<IconsPerColumn>8</IconsPerColumn>
 		</Row>
 
-		<Row>
-			<Atlas>WAR_GALLEY_ATLAS</Atlas>
-			<IconSize>45</IconSize>
-			<Filename>battlegalley_portrait44.dds</Filename>
-			<IconsPerRow>4</IconsPerRow>
-			<IconsPerColumn>3</IconsPerColumn>
-		</Row>
-		<Row>
-			<Atlas>WAR_GALLEY_ATLAS</Atlas>
-			<IconSize>64</IconSize>
-			<Filename>battlegalley_portrait64.dds</Filename>
-			<IconsPerRow>4</IconsPerRow>
-			<IconsPerColumn>3</IconsPerColumn>
-		</Row>
-		<Row>
-			<Atlas>WAR_GALLEY_ATLAS</Atlas>
-			<IconSize>80</IconSize>
-			<Filename>battlegalley_portrait80.dds</Filename>
-			<IconsPerRow>4</IconsPerRow>
-			<IconsPerColumn>3</IconsPerColumn>
-		</Row>
-		<Row>
-			<Atlas>WAR_GALLEY_ATLAS</Atlas>
-			<IconSize>128</IconSize>
-			<Filename>battlegalley_portrait128.dds</Filename>
-			<IconsPerRow>4</IconsPerRow>
-			<IconsPerColumn>3</IconsPerColumn>
-		</Row>
-		<Row>
-			<Atlas>WAR_GALLEY_ATLAS</Atlas>
-			<IconSize>256</IconSize>
-			<Filename>battlegalley_portrait256.dds</Filename>
-			<IconsPerRow>4</IconsPerRow>
-			<IconsPerColumn>3</IconsPerColumn>
-		</Row>
 
 		<Row>
 			<Atlas>CIVIL_WAR_UNIT_ATLAS</Atlas>

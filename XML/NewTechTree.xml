@@ -4,8 +4,52 @@
 			<Set TechReveal="TECH_SCIENTIFIC_THEORY" />
 			<Where Type="RESOURCE_COAL" />
 		</Update>
+		<Update>
+			<Set TechCityTrade="TECH_SCIENTIFIC_THEORY" />
+			<Where Type="RESOURCE_COAL" />
+		</Update>
 	</Resources>
+
 	<Technologies>
+		<Row>
+			<Type>TECH_BATTLESPACE</Type>
+			<Cost>7900</Cost>
+			<Description>TXT_KEY_TECH_BATTLESPACE_TITLE</Description>
+			<Civilopedia>TXT_KEY_TECH_BATTLESPACE_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_BATTLESPACE_HELP</Help>
+			<Era>ERA_FUTURE</Era>
+			<Trade>true</Trade>
+			<GridX>24</GridX>
+			<GridY>7</GridY>
+			<Quote>TXT_KEY_TECH_RADAR_QUOTE</Quote>
+			<PortraitIndex>57</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<AudioIntro>AS2D_TECH_RADAR</AudioIntro>
+			<AudioIntroHeader>AS2D_HEADING_TECH_RADAR</AudioIntroHeader>
+		</Row>
+		<Row>
+			<Type>TECH_NETWORKS</Type>
+			<Cost>7900</Cost>
+			<Description>TXT_KEY_TECH_NETWORKS_TITLE</Description>
+			<Civilopedia>TXT_KEY_TECH_NETWORKS_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_NETWORKS_HELP</Help>
+			<Era>ERA_FUTURE</Era>
+			<Trade>true</Trade>
+			<GridX>24</GridX>
+			<GridY>2</GridY>
+			<Quote>TXT_KEY_TECH_COMPUTERS_QUOTE</Quote>
+			<PortraitIndex>1</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_2</IconAtlas>
+			<AudioIntro>AS2D_TECH_COMPUTERS</AudioIntro>
+			<AudioIntroHeader>AS2D_HEADING_TECH_COMPUTERS</AudioIntroHeader>
+		</Row>
+		<Update>
+			<Set Help="..." />
+		</Update>
+	</Technologies>
+
+	<!-- Updated tree -->
+	<Technologies>		
 		<Update>
 			<Set GridX="1" GridY="6"  Era="ERA_ANCIENT" Cost="35" />
 			<Where Type="TECH_TRAPPING" />
@@ -191,7 +235,7 @@
 			<Where Type="TECH_STEAM_POWER" />
 		</Update>
 		<Update>
-			<Set GridX="16" GridY="9" Era="ERA_INDUSTRIAL" Cost="3100" />
+			<Set GridX="16" GridY="9" Era="ERA_INDUSTRIAL" WorkerSpeedModifier="50" Cost="3100" />
 			<Where Type="TECH_DYNAMITE" />
 		</Update>
 		<Update>
@@ -231,7 +275,7 @@
 			<Where Type="TECH_ELECTRONICS" />
 		</Update>
 		<Update>
-			<Set GridX="20" Era="ERA_POSTMODERN" Cost="5100" />
+			<Set GridX="20" GridY="3" Era="ERA_POSTMODERN" Cost="5100" />
 			<Where Type="TECH_ATOMIC_THEORY" />
 		</Update>
 		<Update>
@@ -243,7 +287,7 @@
 			<Where Type="TECH_COMBINED_ARMS" />
 		</Update>
 		<Update>
-			<Set GridX="20" GridY="1" Era="ERA_POSTMODERN" Cost="5100" />
+			<Set GridX="20" GridY="2" Era="ERA_POSTMODERN" Cost="5100" />
 			<Where Type="TECH_PLASTIC" />
 		</Update>
 		<Update>
@@ -251,12 +295,12 @@
 			<Where Type="TECH_PENICILIN" />
 		</Update>
 		<Update>
-			<Set GridX="22" Era="ERA_POSTMODERN" Cost="6400" />
-			<Where Type="TECH_ECOLOGY" />
-		</Update>
-		<Update>
 			<Set GridX="22" Era="ERA_POSTMODERN"  Cost="6400" />
 			<Where Type="TECH_NUCLEAR_FISSION" />
+		</Update>
+		<Update>
+			<Set GridX="22" Era="ERA_POSTMODERN" Cost="6400" />
+			<Where Type="TECH_ECOLOGY" />
 		</Update>
 		<Update>
 			<Set GridX="22" GridY="6" Era="ERA_POSTMODERN" Cost="6400" />
@@ -271,15 +315,15 @@
 			<Where Type="TECH_SATELLITES" />
 		</Update>
 		<Update>
-			<Set GridX="24" GridY="3" Era="ERA_FUTURE" Cost="7900" />
-			<Where Type="TECH_COMPUTERS" />
-		</Update>
-		<Update>
-			<Set GridX="24" GridY="7" Era="ERA_FUTURE" Cost="7900" />
+			<Set GridX="23" GridY="7" Era="ERA_POSTMODERN" Cost="7600" />
 			<Where Type="TECH_MOBILE_TACTICS" />
 		</Update>
 		<Update>
-			<Set GridX="25" GridY="5" Era="ERA_FUTURE" Cost="8300" />
+			<Set GridX="23" GridY="3" Era="ERA_POSTMODERN" Cost="7600" />
+			<Where Type="TECH_COMPUTERS" />
+		</Update>
+		<Update>
+			<Set GridX="24" GridY="5" Era="ERA_FUTURE" Cost="7900" />
 			<Where Type="TECH_ADVANCED_BALLISTICS" />
 		</Update>
 		<Update>
@@ -287,7 +331,7 @@
 			<Where Type="TECH_ROBOTICS" />
 		</Update>
 		<Update>
-			<Set GridX="25" Era="ERA_FUTURE" Cost="8300" />
+			<Set GridX="25" GridY="6" Era="ERA_FUTURE" Cost="8300" />
 			<Where Type="TECH_LASERS" />
 		</Update>
 		<Update>
@@ -311,7 +355,7 @@
 			<Where Type="TECH_NANOTECHNOLOGY" />
 		</Update>
 		<Update>
-			<Set GridX="26" Era="ERA_FUTURE" Cost="8800" />
+			<Set GridX="26" GridY="6" Era="ERA_FUTURE" Cost="8800" />
 			<Where Type="TECH_STEALTH" />
 		</Update>
 		<Update>
@@ -319,6 +363,8 @@
 			<Where Type="TECH_FUTURE_TECH" />
 		</Update>
 	</Technologies>
+
+	
 	<Technology_PrereqTechs>
 		<Delete TechType="TECH_POTTERY" PrereqTech="TECH_AGRICULTURE" />
 		<Delete TechType="TECH_ARCHERY" PrereqTech="TECH_AGRICULTURE" />
@@ -369,6 +415,10 @@
 		<Delete TechType="TECH_COMBINED_ARMS" PrereqTech="TECH_BALLISTICS" />
 		<Delete TechType="TECH_COMBINED_ARMS" PrereqTech="TECH_COMBUSTION" />
 		<Delete TechType="TECH_ATOMIC_THEORY" PrereqTech="TECH_ELECTRONICS" />
+		<Delete TechType="TECH_ATOMIC_THEORY" PrereqTech="TECH_PLASTIC" />
+		<Delete TechType="TECH_ECOLOGY" PrereqTech="TECH_ATOMIC_THEORY" />
+		<Delete TechType="TECH_ROCKETRY" PrereqTech="TECH_ATOMIC_THEORY" />
+		<Delete TechType="TECH_PENICILIN" PrereqTech="TECH_REFRIGERATION" />
 		<Delete TechType="TECH_NUCLEAR_FISSION" PrereqTech="TECH_RADAR" />
 		<Delete TechType="TECH_COMPUTERS" PrereqTech="TECH_RADAR" />
 		<Delete TechType="TECH_COMPUTERS" PrereqTech="TECH_COMBINED_ARMS" />
@@ -377,6 +427,9 @@
 		<Delete TechType="TECH_ADVANCED_BALLISTICS" PrereqTech="TECH_NUCLEAR_FISSION" />
 		<Delete TechType="TECH_ADVANCED_BALLISTICS" PrereqTech="TECH_ROCKETRY" />
 		<Delete TechType="TECH_ROBOTICS" PrereqTech="TECH_ROCKETRY" />
+		<Delete TechType="TECH_ROBOTICS" PrereqTech="TECH_COMPUTERS" />
+		<Delete TechType="TECH_INTERNET" PrereqTech="TECH_TELECOM" />
+		<Delete TechType="TECH_LASERS" PrereqTech="TECH_COMPUTERS" />
 		<Delete TechType="TECH_GLOBALIZATION" PrereqTech="TECH_TELECOM" />
 		<Delete TechType="TECH_PARTICLE_PHYSICS" PrereqTech="TECH_TELECOM" />
 		<Delete TechType="TECH_PARTICLE_PHYSICS" PrereqTech="TECH_MOBILE_TACTICS" />
@@ -562,12 +615,8 @@
 			<PrereqTech>TECH_RADIO</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_PENICILIN</TechType>
+			<TechType>TECH_NUCLEAR_FISSION</TechType>
 			<PrereqTech>TECH_PLASTIC</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_ECOLOGY</TechType>
-			<PrereqTech>TECH_PENICILIN</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_ROCKETRY</TechType>
@@ -590,24 +639,52 @@
 			<PrereqTech>TECH_ROCKETRY</PrereqTech>
 		</Row>
 		<Row>
+			<TechType>TECH_NETWORKS</TechType>
+			<PrereqTech>TECH_COMPUTERS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_NETWORKS</TechType>
+			<PrereqTech>TECH_TELECOM</PrereqTech>
+		</Row>
+		<Row>
 			<TechType>TECH_ADVANCED_BALLISTICS</TechType>
 			<PrereqTech>TECH_COMPUTERS</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_INTERNET</TechType>
+			<TechType>TECH_BATTLESPACE</TechType>
+			<PrereqTech>TECH_MOBILE_TACTICS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_BATTLESPACE</TechType>
 			<PrereqTech>TECH_COMPUTERS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_BATTLESPACE</TechType>
+			<PrereqTech>TECH_SATELLITES</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_INTERNET</TechType>
+			<PrereqTech>TECH_NETWORKS</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_ADVANCED_BALLISTICS</TechType>
 			<PrereqTech>TECH_SATELLITES</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_LASERS</TechType>
-			<PrereqTech>TECH_MOBILE_TACTICS</PrereqTech>
+			<TechType>TECH_ROBOTICS</TechType>
+			<PrereqTech>TECH_NETWORKS</PrereqTech>
 		</Row>
 		<Row>
-			<TechType>TECH_STEALTH</TechType>
+			<TechType>TECH_LASERS</TechType>
+			<PrereqTech>TECH_BATTLESPACE</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_LASERS</TechType>
 			<PrereqTech>TECH_ADVANCED_BALLISTICS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_NANOTECHNOLOGY</TechType>
+			<PrereqTech>TECH_LASERS</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_GLOBALIZATION</TechType>
@@ -616,14 +693,6 @@
 		<Row>
 			<TechType>TECH_PARTICLE_PHYSICS</TechType>
 			<PrereqTech>TECH_ROBOTICS</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_PENICILIN</TechType>
-			<PrereqTech>TECH_ATOMIC_THEORY</PrereqTech>
-		</Row>
-		<Row>
-			<TechType>TECH_ROCKETRY</TechType>
-			<PrereqTech>TECH_ATOMIC_THEORY</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_NUCLEAR_FISSION</TechType>
@@ -661,7 +730,7 @@
 
 	<Units>
 		<Update>
-			<Set PrereqTech="TECH_GUNPOWDER" />
+			<Set PrereqTech="TECH_METALLURGY" />
 			<Where Type="UNIT_CANNON" />
 		</Update>
 		<Update>
@@ -681,7 +750,7 @@
 			<Where Type="UNIT_NUCLEAR_SUBMARINE" />
 		</Update>
 		<Update>
-			<Set PrereqTech="TECH_RADIO" />
+			<Set PrereqTech="TECH_REPLACEABLE_PARTS" />
 			<Where Type="UNIT_DESTROYER" />
 		</Update>
 		<Update>
@@ -689,7 +758,7 @@
 			<Where Type="UNIT_MECH" />
 		</Update>
 		<Update>
-			<Set PrereqTech="TECH_STEALTH" />
+			<Set PrereqTech="TECH_BATTLESPACE" />
 			<Where Type="UNIT_JET_FIGHTER" />
 		</Update>
 		<Update>
@@ -697,7 +766,7 @@
 			<Where Type="UNIT_GUIDED_MISSILE" />
 		</Update>
 		<Update>
-			<Set PrereqTech="TECH_MOBILE_TACTICS" />
+			<Set PrereqTech="TECH_BATTLESPACE" />
 			<Where Type="UNIT_HELICOPTER_GUNSHIP" />
 		</Update>
 		<Update>
@@ -715,6 +784,10 @@
 		<Update>
 			<Set PrereqTech="TECH_ADVANCED_BALLISTICS" />
 			<Where Type="UNIT_ROCKET_ARTILLERY" />
+		</Update>
+		<Update>
+			<Set PrereqTech="TECH_ADVANCED_BALLISTICS" />
+			<Where Type="UNIT_NUCLEAR_SUBMARINE" />
 		</Update>
 		<Update>
 			<Set PrereqTech="TECH_BALLISTICS" />
@@ -795,10 +868,33 @@
 			<Where Type="BUILDING_MILITARY_BASE" />
 		</Update>
 		<Update>
+			<Set PrereqTech="TECH_REPLACEABLE_PARTS" />
+			<Where Type="BUILDING_HYDRO_PLANT" />
+		</Update>
+		<Update>
 			<Set PrereqTech="TECH_COMPUTERS" />
 			<Where Type="BUILDING_NUCLEAR_PLANT" />
 		</Update>
+		<Update>
+			<Set EnhancedYieldTech="TECH_NETWORKS" />
+			<Where Type="BUILDING_LABORATORY" />
+		</Update>
+		<Update>
+			<Set XBuiltTriggersIdeologyChoice="0" />
+			<Where Type="BUILDING_FACTORY" />
+		</Update>
+		<Update>
+			<Set XBuiltTriggersIdeologyChoice="3" />
+			<Where Type="BUILDING_PUBLIC_SCHOOL" />
+		</Update>
 	</Buildings>
+	<Building_TechEnhancedYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_LABORATORY</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Building_TechEnhancedYieldChanges>
 	<Projects>
 		<Update>
 			<Set TechPrereq="TECH_NUCLEAR_FISSION" />

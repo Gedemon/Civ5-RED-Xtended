@@ -44,6 +44,11 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>XML/NewPromotions.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>XML/Texts.xml</FileName>
       </Action>
       <Action>
@@ -93,6 +98,24 @@
   <ItemGroup>
     <Folder Include="Art" />
     <Folder Include="Override" />
+    <Folder Include="Units\AttackSubmarine\Generic" />
+    <Folder Include="Units\Bombard\Generic" />
+    <Folder Include="Units\CloseAirSupport\Generic" />
+    <Folder Include="Units\Culverin\Generic" />
+    <Folder Include="Units\JetBomber\Generic" />
+    <Folder Include="Units\MissileCruiser\Generic" />
+    <Folder Include="Units\MissileDestroyer" />
+    <Folder Include="Units\MissileDestroyer\Russia" />
+    <Folder Include="Units\CloseAirSupport" />
+    <Folder Include="Units\Culverin" />
+    <Folder Include="Units\Bombard" />
+    <Folder Include="Units\AttackSubmarine" />
+    <Folder Include="Units\MissileCruiser" />
+    <Folder Include="Units\StrikeFighter" />
+    <Folder Include="Units\StrikeFighter\Generic" />
+    <Folder Include="Units\VolleyGun" />
+    <Folder Include="Units\NuclearCarrier" />
+    <Folder Include="Units\JetBomber" />
     <Folder Include="Units\AttackAircraft\Generic\" />
     <Folder Include="Units\Bomber\Generic" />
     <Folder Include="Units\AttackAircraft" />
@@ -117,6 +140,8 @@
     <Folder Include="Units\LineInfantry" />
     <Folder Include="Units\Explorer" />
     <Folder Include="Units\Chariot" />
+    <Folder Include="Units\NuclearCarrier\Generic" />
+    <Folder Include="Units\VolleyGun\Generic" />
     <Folder Include="Units\WarGalley" />
     <Folder Include="Units\WarGalley\Generic" />
     <Folder Include="Units\_Edited_Animations" />
@@ -126,26 +151,6 @@
     <Folder Include="SQL" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Art\battlegalley_portrait128.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Art\battlegalley_portrait256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Art\battlegalley_portrait44.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Art\battlegalley_portrait64.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Art\battlegalley_portrait80.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
     <Content Include="Art\RED_UnitAtlas128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -163,6 +168,14 @@
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\RED_UnitAtlas80.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Override\InfoTooltipInclude.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Override\TechButtonInclude.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -201,6 +214,150 @@
     <Content Include="SQL\5- Units Rules.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\AttackSubmarine\Generic\akula.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\AttackSubmarine\Generic\Akula.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\AttackSubmarine\Generic\Akula_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\AttackSubmarine\Generic\Akula_DMG_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\AttackSubmarine\Generic\Akula_DMG_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\AttackSubmarine\Generic\Akula_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\Bombard\Generic\bombard_big.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\Bombard\Generic\bombard_big.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\Bombard\Generic\Bombard_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\Bombard\Generic\Bombard_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\Bombard\Generic\musketman_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\Bombard\Generic\musketman_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\CloseAirSupport\Generic\Su-25.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\CloseAirSupport\Generic\Su-25.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\CloseAirSupport\Generic\Su-25_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\CloseAirSupport\Generic\Su-25_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\Culverin\Generic\culverin.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\Culverin\Generic\culverin.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\Culverin\Generic\Culverin.png">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\Culverin\Generic\culverin_crew_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\Culverin\Generic\culverin_crew_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\Culverin\Generic\culverin_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\Culverin\Generic\culverin_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\JetBomber\Generic\B52.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\JetBomber\Generic\B52.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\JetBomber\Generic\B52.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\JetBomber\Generic\stealthbomber_gloss.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\JetBomber\Generic\SV_B52.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\MissileCruiser\Generic\kirov.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\MissileCruiser\Generic\Kirov.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\MissileCruiser\Generic\kirov_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\MissileCruiser\Generic\kirov_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\MissileDestroyer\Russia\BPK1155.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\MissileDestroyer\Russia\BPK1155.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\MissileDestroyer\Russia\BPK1155_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\MissileDestroyer\Russia\BPK1155_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Units\AttackAircraft\Generic\AttackAircraft_Generic.dds">
       <SubType>Lua</SubType>
@@ -522,6 +679,54 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="Units\NuclearCarrier\Generic\Porte-Avions_2.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\NuclearCarrier\Generic\Porte-Avions_2.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\NuclearCarrier\Generic\Porte-Avions_2.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\NuclearCarrier\Generic\Porte-Avions_2_gloss.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\StrikeFighter\Generic\TornadoGR1.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\StrikeFighter\Generic\TornadoGR1.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\StrikeFighter\Generic\TornadoGR1_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\StrikeFighter\Generic\TornadoGR1_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\VolleyGun\Generic\VolleyGun.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\VolleyGun\Generic\VolleyGun.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\VolleyGun\Generic\VolleyGun_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Units\VolleyGun\Generic\VolleyGun_sref.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="Units\WarGalley\Generic\battle_galley.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -682,7 +887,7 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="XML\autosave.xml">
+    <Content Include="XML\NewPromotions.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 7/15/2011 7:08:44 PM -->
+<GameData>
+
+	<!-- ******************************************************************************************* -->
+	<!-- ************************************** NEW PROMOTIONS ************************************* -->
+	<!-- ******************************************************************************************* -->
+
+
+	<!-- SMALL EVASION -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_SMALL_EVASION</Type>
+			<Description>TXT_KEY_PROMOTION_SMALL_EVASION</Description>
+			<Help>TXT_KEY_PROMOTION_SMALL_EVASION</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<EvasionChange>50</EvasionChange>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PEDIA_PROMOTION_EVASION_I</PediaEntry>
+		</Row>
+	</UnitPromotions>
+
+	<!-- GUN 25 -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_GUN_25</Type>
+			<Description>TXT_KEY_PROMOTION_GUN_25</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_GUN_25</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_GUN_25_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_GUN_25</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+			<Modifier>25</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+
+	<!-- CITY PENALTY 50 -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_CITY_PENALTY_50</Type>
+			<Description>TXT_KEY_PROMOTION_CITY_PENALTY_50</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_CITY_PENALTY_50</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_CITY_PENALTY_50_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<CityAttack>-50</CityAttack>
+			<PortraitIndex>57</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+
+	</UnitPromotions>
+
+	<!-- LIGHT EQUIPEMENT PENALTY -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_LIGHT</Type>
+			<Description>TXT_KEY_PROMOTION_LIGHT</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_LIGHT</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_LIGHT_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<CityAttack>-10</CityAttack>
+			<PortraitIndex>57</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_LIGHT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+			<Modifier>-25</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+
+
+	<!-- ******************************************************************************************* -->
+	<!-- ************************************ CLASSES PROMOTIONS *********************************** -->
+	<!-- **** use PROMOTION_[unit/class key name] for automatic addition to freepromotion list ***** -->
+	<!-- ******************************************************************************************* -->
+
+<!-- <LostWithUpgrade>true</LostWithUpgrade> -->
+
+	<!-- SPECIAL FORCES (use Lua for effect) -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_SPECIAL_FORCES</Type>
+			<Description>TXT_KEY_PROMOTION_SPECIAL_FORCES</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_SPECIAL_FORCES_DESC</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_SPECIAL_FORCES_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<IgnoreTerrainCost>true</IgnoreTerrainCost>
+			<IgnoreZOC>true</IgnoreZOC>
+			<OnlyDefensive>true</OnlyDefensive>
+			<!--<RivalTerritory>true</RivalTerritory>-->
+			<RangedDefenseMod>50</RangedDefenseMod>
+			<CityAttack>-50</CityAttack>
+			<ExtraWithdrawal>80</ExtraWithdrawal>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<!-- make it ignored by flag promotion -->
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_SPECIAL_FORCES</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+			<Modifier>-25</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SPECIAL_FORCES</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+			<Modifier>25</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+
+	<!-- PARATROOPER -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_PARATROOPER</Type>
+			<Description>TXT_KEY_PROMOTION_PARATROOPER</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_PARATROOPER_DESC</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_PARATROOPER_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<IgnoreTerrainCost>true</IgnoreTerrainCost>
+			<CityAttack>-25</CityAttack>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<!-- make it ignored by flag promotion -->
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_PARATROOPER</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+			<Modifier>-25</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PARATROOPER</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+			<Modifier>25</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+
+	<!-- INFANTRY -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_INFANTRY</Type>
+			<Description>TXT_KEY_PROMOTION_INFANTRY</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_INFANTRY</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_INFANTRY_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<CityAttack>25</CityAttack>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+
+	<!-- ARTILLERY (Howitzer-Guns)-->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_ARTILLERY</Type>
+			<Description>TXT_KEY_PROMOTION_ARTILLERY</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_ARTILLERY</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_ARTILLERY_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<CityAttack>100</CityAttack>
+			<RangeAttackIgnoreLOS>1</RangeAttackIgnoreLOS>
+			<OnlyDefensive>1</OnlyDefensive> 
+			<NoDefensiveBonus>0</NoDefensiveBonus>			<!-- default = 1 -->
+			<InterceptChanceChange>0</InterceptChanceChange>
+			<VisibilityChange>-1</VisibilityChange>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+
+	<!-- FIELD GUN -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_FIELD_GUN</Type>
+			<Description>TXT_KEY_PROMOTION_FIELD_GUN</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_FIELD_GUN</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_FIELD_GUN_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<OnlyDefensive>1</OnlyDefensive>
+			<InterceptChanceChange>0</InterceptChanceChange>
+			<VisibilityChange>-1</VisibilityChange>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_FIELD_GUN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+			<Modifier>100</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+
+	<!-- ANTI AIRCRAFT GUN -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_ANTI_AIRCRAFT_GUN</Type>
+			<Description>TXT_KEY_PROMOTION_ANTI_AIRCRAFT_GUN</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_ANTI_AIRCRAFT_GUN</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_ANTI_AIRCRAFT_GUN_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<OnlyDefensive>1</OnlyDefensive>
+			<InterceptChanceChange>100</InterceptChanceChange>
+			<NumInterceptionChange>1</NumInterceptionChange>
+			<VisibilityChange>-1</VisibilityChange>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_ANTI_AIRCRAFT_GUN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+			<Modifier>100</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+	<UnitPromotions_Domains>
+		<Row>
+			<PromotionType>PROMOTION_ANTI_AIRCRAFT_GUN</PromotionType>
+			<DomainType>DOMAIN_AIR</DomainType>
+			<Modifier>100</Modifier>
+		</Row>
+	</UnitPromotions_Domains>
+	
+	<!-- LIGHT TANK -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_LIGHT_TANK</Type>
+			<Description>TXT_KEY_PROMOTION_LIGHT_TANK</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_LIGHT_TANK</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_LIGHT_TANK_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<NoDefensiveBonus>true</NoDefensiveBonus>
+			<CanMoveAfterAttacking>true</CanMoveAfterAttacking>
+			<CityAttack>-25</CityAttack>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_LIGHT_TANK</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+			<Modifier>-25</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_LIGHT_TANK</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+			<Modifier>25</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+
+	<!-- WW1 TANK -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_WW1_TANK</Type>
+			<Description>TXT_KEY_PROMOTION_WW1_TANK</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_WW1_TANK</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_WW1_TANK_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<AttackFortifiedMod>25</AttackFortifiedMod>
+			<NoDefensiveBonus>true</NoDefensiveBonus>
+			<CityAttack>-25</CityAttack>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_WW1_TANK</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+			<Modifier>50</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+
+	<!-- TANK -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_TANK</Type>
+			<Description>TXT_KEY_PROMOTION_TANK</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_TANK</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_TANK_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<NoDefensiveBonus>true</NoDefensiveBonus>
+			<CanMoveAfterAttacking>true</CanMoveAfterAttacking>
+			<AttackFortifiedMod>25</AttackFortifiedMod>
+			<CityAttack>-33</CityAttack>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_TANK</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+			<Modifier>25</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+
+	<!-- WWI FIGHTER -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_WW1_FIGHTER</Type>
+			<Description>TXT_KEY_PROMOTION_WW1_FIGHTER</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_WW1_FIGHTER</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_WW1_FIGHTER_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<RangedAttackModifier>-50</RangedAttackModifier>
+			<CityAttack>-25</CityAttack>
+			<InterceptChanceChange>100</InterceptChanceChange>
+			<AirSweepCapable>true</AirSweepCapable>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	
+	<!-- FIGHTER -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_FIGHTER</Type>
+			<Description>TXT_KEY_PROMOTION_FIGHTER</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_FIGHTER</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_FIGHTER_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<RangedAttackModifier>-50</RangedAttackModifier>
+			<CityAttack>-25</CityAttack>
+			<InterceptChanceChange>100</InterceptChanceChange>
+			<AirSweepCapable>true</AirSweepCapable>
+			<NumInterceptionChange>1</NumInterceptionChange>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Domains>
+		<Row>
+			<PromotionType>PROMOTION_FIGHTER</PromotionType>
+			<DomainType>DOMAIN_AIR</DomainType>
+			<Modifier>33</Modifier>
+		</Row>
+	</UnitPromotions_Domains>
+
+	<!-- EARLY JET FIGHTER -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_EARLY_JET_FIGHTER</Type>
+			<Description>TXT_KEY_PROMOTION_EARLY_JET_FIGHTER</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_EARLY_JET_FIGHTER</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_EARLY_JET_FIGHTER_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<CityAttack>-25</CityAttack>
+			<RangedAttackModifier>-50</RangedAttackModifier>
+			<NumInterceptionChange>2</NumInterceptionChange>
+			<InterceptChanceChange>100</InterceptChanceChange>
+			<AirSweepCapable>true</AirSweepCapable>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Domains>
+		<Row>
+			<PromotionType>PROMOTION_EARLY_JET_FIGHTER</PromotionType>
+			<DomainType>DOMAIN_AIR</DomainType>
+			<Modifier>25</Modifier>
+		</Row>
+	</UnitPromotions_Domains>
+
+	<!-- JET FIGHTER -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_JET_FIGHTER</Type>
+			<Description>TXT_KEY_PROMOTION_JET_FIGHTER</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_JET_FIGHTER</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_JET_FIGHTER_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<CityAttack>-25</CityAttack>
+			<RangedAttackModifier>-50</RangedAttackModifier>
+			<NumInterceptionChange>3</NumInterceptionChange>
+			<InterceptChanceChange>100</InterceptChanceChange>
+			<AirSweepCapable>true</AirSweepCapable>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Domains>
+		<Row>
+			<PromotionType>PROMOTION_JET_FIGHTER</PromotionType>
+			<DomainType>DOMAIN_AIR</DomainType>
+			<Modifier>100</Modifier>
+		</Row>
+	</UnitPromotions_Domains>
+
+	<!-- STRIKE FIGHTER -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_STRIKE_FIGHTER</Type>
+			<Description>TXT_KEY_PROMOTION_STRIKE_FIGHTER</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_STRIKE_FIGHTER</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_STRIKE_FIGHTER_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<RangedAttackModifier>0</RangedAttackModifier>
+			<NumInterceptionChange>1</NumInterceptionChange>
+			<InterceptChanceChange>100</InterceptChanceChange>
+			<AirSweepCapable>true</AirSweepCapable>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Domains>
+		<Row>
+			<PromotionType>PROMOTION_STRIKE_FIGHTER</PromotionType>
+			<DomainType>DOMAIN_AIR</DomainType>
+			<Modifier>25</Modifier>
+		</Row>
+	</UnitPromotions_Domains>
+
+
+	<!-- ATTACK AIRCRAFT -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_ATTACK_AIRCRAFT</Type>
+			<Description>TXT_KEY_PROMOTION_ATTACK_AIRCRAFT</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_ATTACK_AIRCRAFT</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_ATTACK_AIRCRAFT_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<CityAttack>-25</CityAttack>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Domains>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_AIRCRAFT</PromotionType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<Modifier>100</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_AIRCRAFT</PromotionType>
+			<DomainType>DOMAIN_SEA</DomainType>
+			<Modifier>75</Modifier>
+		</Row>
+	</UnitPromotions_Domains>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_AIRCRAFT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+			<Modifier>50</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+
+	<!-- CLOSE AIR SUPPORT AIRCRAFT -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_CLOSE_AIR_SUPPORT</Type>
+			<Description>TXT_KEY_PROMOTION_CLOSE_AIR_SUPPORT</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_CLOSE_AIR_SUPPORT</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_CLOSE_AIR_SUPPORT_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<CityAttack>-25</CityAttack>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Domains>
+		<Row>
+			<PromotionType>PROMOTION_CLOSE_AIR_SUPPORT</PromotionType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<Modifier>100</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CLOSE_AIR_SUPPORT</PromotionType>
+			<DomainType>DOMAIN_SEA</DomainType>
+			<Modifier>75</Modifier>
+		</Row>
+	</UnitPromotions_Domains>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_CLOSE_AIR_SUPPORT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+			<Modifier>50</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+
+
+	<!-- BOMBER -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_BOMBER</Type>
+			<Description>TXT_KEY_PROMOTION_BOMBER</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_BOMBER</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_BOMBER_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<CityAttack>20</CityAttack>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Domains>
+		<Row>
+			<PromotionType>PROMOTION_BOMBER</PromotionType>
+			<DomainType>DOMAIN_SEA</DomainType>
+			<Modifier>-50</Modifier>
+		</Row>
+	</UnitPromotions_Domains>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_BOMBER</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+			<Modifier>-25</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+
+	<!-- JET BOMBER -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_JET_BOMBER</Type>
+			<Description>TXT_KEY_PROMOTION_JET_BOMBER</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_JET_BOMBER</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_JET_BOMBER_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<CityAttack>25</CityAttack>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Domains>
+		<Row>
+			<PromotionType>PROMOTION_JET_BOMBER</PromotionType>
+			<DomainType>DOMAIN_SEA</DomainType>
+			<Modifier>-50</Modifier>
+		</Row>
+	</UnitPromotions_Domains>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_JET_BOMBER</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+			<Modifier>-25</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+
+
+	<!-- HEAVY BOMBER -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_HEAVY_BOMBER</Type>
+			<Description>TXT_KEY_PROMOTION_HEAVY_BOMBER</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_HEAVY_BOMBER</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_HEAVY_BOMBER_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<CityAttack>25</CityAttack>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Domains>
+		<Row>
+			<PromotionType>PROMOTION_HEAVY_BOMBER</PromotionType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<Modifier>-33</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_HEAVY_BOMBER</PromotionType>
+			<DomainType>DOMAIN_SEA</DomainType>
+			<Modifier>-66</Modifier>
+		</Row>
+	</UnitPromotions_Domains>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_HEAVY_BOMBER</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+			<Modifier>-25</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+	
+
+	<!-- BATTLESHIP -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_BATTLESHIP</Type>
+			<Description>TXT_KEY_PROMOTION_BATTLESHIP</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_BATTLESHIP</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_BATTLESHIP_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<RangeAttackIgnoreLOS>1</RangeAttackIgnoreLOS>
+			<OnlyDefensive>1</OnlyDefensive>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Domains>
+		<Row>
+			<PromotionType>PROMOTION_BATTLESHIP</PromotionType>
+			<DomainType>DOMAIN_AIR</DomainType>
+			<Modifier>-25</Modifier>
+		</Row>
+	</UnitPromotions_Domains>
+	
+	<!-- CARRIER -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_CARRIER</Type>
+			<Description>TXT_KEY_PROMOTION_CARRIER</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_CARRIER</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_CARRIER_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<CargoChange>3</CargoChange>
+			<Recon>true</Recon>
+			<OnlyDefensive>1</OnlyDefensive>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+
+	<!-- IRONCLAD -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_IRONCLAD</Type>
+			<Description>TXT_KEY_PROMOTION_IRONCLAD</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_IRONCLAD</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_IRONCLAD_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<CityAttack>33</CityAttack>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+
+	<!-- NUCLEAR CARRIER -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_NUCLEAR_CARRIER</Type>
+			<Description>TXT_KEY_PROMOTION_NUCLEAR_CARRIER</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_NUCLEAR_CARRIER</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_NUCLEAR_CARRIER_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<CargoChange>5</CargoChange>
+			<Recon>true</Recon>
+			<OnlyDefensive>1</OnlyDefensive>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+
+	<!-- DESTROYER -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_DESTROYER</Type>
+			<Description>TXT_KEY_PROMOTION_DESTROYER</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_DESTROYER</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_DESTROYER_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<OnlyDefensive>1</OnlyDefensive>
+			<InterceptChanceChange>50</InterceptChanceChange>
+			<NumInterceptionChange>1</NumInterceptionChange>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+
+	<!-- MISSILE DESTROYER -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_MISSILE_DESTROYER</Type>
+			<Description>TXT_KEY_PROMOTION_MISSILE_DESTROYER</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_MISSILE_DESTROYER</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_MISSILE_DESTROYER_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<CargoChange>3</CargoChange>
+			<InterceptChanceChange>100</InterceptChanceChange>
+			<NumInterceptionChange>2</NumInterceptionChange>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+
+	<!-- MISSILE CRUISER -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_MISSILE_CRUISER</Type>
+			<Description>TXT_KEY_PROMOTION_MISSILE_CRUISER</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_MISSILE_CRUISER</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_MISSILE_CRUISER_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<OnlyDefensive>1</OnlyDefensive>
+			<CargoChange>8</CargoChange>
+			<InterceptChanceChange>100</InterceptChanceChange>
+			<NumInterceptionChange>2</NumInterceptionChange>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+
+	<!-- SUBMARINES -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_SUBMARINE</Type>
+			<Description>TXT_KEY_PROMOTION_SUBMARINE</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_SUBMARINE</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_SUBMARINE_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<OnlyDefensive>1</OnlyDefensive>
+			<Invisible>INVISIBLE_SUBMARINE</Invisible>
+			<CanMoveImpassable>true</CanMoveImpassable>
+			<CanMoveAfterAttacking>true</CanMoveAfterAttacking>
+			<IgnoreZOC>true</IgnoreZOC>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+
+	<!-- ATTACK SUBMARINES -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_ATTACK_SUBMARINE</Type>
+			<Description>TXT_KEY_PROMOTION_ATTACK_SUBMARINE</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_ATTACK_SUBMARINE</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_ATTACK_SUBMARINE_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<OnlyDefensive>1</OnlyDefensive>
+			<Invisible>INVISIBLE_SUBMARINE</Invisible>
+			<CargoChange>3</CargoChange>
+			<CanMoveImpassable>true</CanMoveImpassable>
+			<CanMoveAfterAttacking>true</CanMoveAfterAttacking>
+			<IgnoreZOC>true</IgnoreZOC>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+
+	<!-- NUCLEAR SUBMARINES -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_NUCLEAR_SUBMARINE</Type>
+			<Description>TXT_KEY_PROMOTION_NUCLEAR_SUBMARINE</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_NUCLEAR_SUBMARINE</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_NUCLEAR_SUBMARINE_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<OnlyDefensive>1</OnlyDefensive>
+			<CargoChange>8</CargoChange>
+			<Invisible>INVISIBLE_SUBMARINE</Invisible>
+			<CanMoveImpassable>true</CanMoveImpassable>
+			<CanMoveAfterAttacking>true</CanMoveAfterAttacking>
+			<IgnoreZOC>true</IgnoreZOC>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	
+</GameData>
