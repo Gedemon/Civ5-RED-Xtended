@@ -219,11 +219,11 @@
 			<Where Type="TECH_FERTILIZER" />
 		</Update>
 		<Update>
-			<Set GridX="15" GridY="7" Era="ERA_INDUSTRIAL" Cost="2350" />
+			<Set GridX="15" GridY="6" Era="ERA_INDUSTRIAL" Cost="2350" />
 			<Where Type="TECH_RIFLING" />
 		</Update>
 		<Update>
-			<Set GridX="15" Era="ERA_INDUSTRIAL" Cost="2350" />
+			<Set GridX="15" GridY="2" Era="ERA_INDUSTRIAL" Cost="2350" />
 			<Where Type="TECH_BIOLOGY" />
 		</Update>
 		<Update>
@@ -239,7 +239,7 @@
 			<Where Type="TECH_DYNAMITE" />
 		</Update>
 		<Update>
-			<Set GridX="16" GridY="5" Era="ERA_INDUSTRIAL" Cost="3100" />
+			<Set GridX="16" GridY="4" Era="ERA_INDUSTRIAL" Cost="3100" />
 			<Where Type="TECH_RAILROAD" />
 		</Update>
 		<Update>
@@ -396,9 +396,11 @@
 		<Delete TechType="TECH_RIFLING" PrereqTech="TECH_ECONOMICS" />
 		<Delete TechType="TECH_RIFLING" PrereqTech="TECH_METALLURGY" />
 		<Delete TechType="TECH_STEAM_POWER" PrereqTech="TECH_INDUSTRIALIZATION" />
+		<Delete TechType="TECH_STEAM_POWER" PrereqTech="TECH_SCIENTIFIC_THEORY" />
 		<Delete TechType="TECH_REPLACEABLE_PARTS" PrereqTech="TECH_STEAM_POWER" />
 		<Delete TechType="TECH_REPLACEABLE_PARTS" PrereqTech="TECH_ELECTRICITY" />
 		<Delete TechType="TECH_RAILROAD" PrereqTech="TECH_STEAM_POWER" />
+		<Delete TechType="TECH_RAILROAD" PrereqTech="TECH_SCIENTIFIC_THEORY" />
 		<Delete TechType="TECH_RAILROAD" PrereqTech="TECH_DYNAMITE" />
 		<Delete TechType="TECH_REFRIGERATION" PrereqTech="TECH_ELECTRICITY" />
 		<Delete TechType="TECH_REFRIGERATION" PrereqTech="TECH_BIOLOGY" />
@@ -548,11 +550,15 @@
 		</Row>
 		<Row>
 			<TechType>TECH_RAILROAD</TechType>
-			<PrereqTech>TECH_SCIENTIFIC_THEORY</PrereqTech>
+			<PrereqTech>TECH_RIFLING</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_COMBUSTION</TechType>
 			<PrereqTech>TECH_ELECTRICITY</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_COMBUSTION</TechType>
+			<PrereqTech>TECH_RAILROAD</PrereqTech>
 		</Row>
 		<Row>
 			<TechType>TECH_COMBUSTION</TechType>
@@ -746,8 +752,8 @@
 			<Where Type="UNIT_ASSYRIAN_SIEGE_TOWER" />
 		</Update>
 		<Update>
-			<Set PrereqTech="TECH_COMPUTERS" />
-			<Where Type="UNIT_NUCLEAR_SUBMARINE" />
+			<Set PrereqTech="TECH_REPLACEABLE_PARTS" />
+			<Where Type="UNIT_SUBMARINE" />
 		</Update>
 		<Update>
 			<Set PrereqTech="TECH_REPLACEABLE_PARTS" />
@@ -806,6 +812,10 @@
 			<Where Type="UNIT_CAVALRY" />
 		</Update>
 		<Update>
+			<Set ObsoleteTech="TECH_REPLACEABLE_PARTS" />
+			<Where Type="UNIT_CAVALRY" />
+		</Update>
+		<Update>
 			<Set PrereqTech="TECH_RIFLING" />
 			<Where Type="UNIT_RUSSIAN_COSSACK" />
 		</Update>
@@ -826,7 +836,7 @@
 			<Where Type="UNIT_GREAT_WAR_INFANTRY" />
 		</Update>
 		<Update>
-			<Set PrereqTech="TECH_REPLACEABLE_PARTS" />
+			<Set PrereqTech="TECH_COMBUSTION" />
 			<Where Type="UNIT_WWI_TANK" />
 		</Update>
 		<Update>

@@ -64,7 +64,7 @@ SELECT	'STRIKE_FIGHTER',		'BATTLESPACE',		'',		'TornadoGR1',					'JET_FIGHTER',	
 SELECT	'DREADNOUGHT',			'BALLISTICS',		'',		'Dreadnought_Generic',			'BATTLESHIP',			'BATTLESHIP',			NULL,	NULL,				0.10,	NULL,			50,		50,		500,	3,		NULL,	NULL,	NULL,	22,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
 SELECT	'NUCLEAR_CARRIER',		'ADVANCED_BALLISTICS','',	'kuznetsov',					'CARRIER',				'CARRIER',				NULL,	NULL,				NULL,	NULL,			50,		NULL,	700,	NULL,	NULL,	NULL,	NULL,	18,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
 SELECT	'MISSILE_DESTROYER',	'COMPUTERS',		'',		'MissileCruiser',				'MISSILE_CRUISER',		'MISSILECRUISER',		NULL,	NULL,				0.10,	'NAVALMELEE',	60,		0,		NULL,	NULL,	NULL,	NULL,	NULL,	31,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
-SELECT	'ATTACK_SUBMARINE',		'COMPUTERS',		'',		'akula',						'NUCLEAR_SUBMARINE',	'NUCLEARSUBMARINE',		NULL,	NULL,				0.10,	NULL,			40,		80,		650,	NULL,	NULL,	NULL,	NULL,	29,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
+SELECT	'ATTACK_SUBMARINE',		'COMPUTERS',		'',		'akula',						'NUCLEAR_SUBMARINE',	'NUCLEARSUBMARINE',		NULL,	NULL,				0.09,	NULL,			40,		80,		650,	NULL,	NULL,	NULL,	NULL,	29,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
 --SELECT	'CRUISER',			'ELECTRONICS',		'',		'Cruiser_Generic',				'BATTLESHIP',			'BATTLESHIP',			NULL,	NULL,				0.11,	NULL,			45,		30,		435,	6,		NULL,	NULL,	NULL,	10,		'RED_UNIT_ICONS',		NULL,								NULL,			NULL	UNION ALL
 
 SELECT	'END_OF_INSERT',		NULL,				'',		NULL,							NULL,					NULL,					NULL,	NULL,				NULL,	NULL,			NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,					NULL,								NULL,			NULL;
@@ -289,7 +289,7 @@ INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
 	FROM Unit_FreePromotions JOIN UnitConfiguration ON (UnitType= 'UNIT_' || UnitConfiguration.Template);
 
 --
-DELETE FROM Unit_FreePromotions WHERE UnitType = (SELECT 'UNIT_' || UnitKey FROM UnitPromotions JOIN UnitConfiguration ON (UnitPromotions.Type = 'PROMOTION_' || UnitConfiguration.UnitKey));
+DELETE FROM Unit_FreePromotions WHERE UnitType IN (SELECT 'UNIT_' || UnitConfiguration.UnitKey FROM UnitPromotions JOIN UnitConfiguration ON (UnitPromotions.Type = 'PROMOTION_' || UnitConfiguration.UnitKey));
 
 -- then replace the master template FreePromotion if there is one specific to the class
 REPLACE INTO Unit_FreePromotions (UnitType, PromotionType)

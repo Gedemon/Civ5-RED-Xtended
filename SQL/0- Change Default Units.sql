@@ -43,6 +43,7 @@ DELETE FROM Unit_FreePromotions WHERE PromotionType ='PROMOTION_ONLY_DEFENSIVE' 
 
 
 /* Submarine */
+UPDATE Units SET Moves = '4' WHERE Type = 'UNIT_SUBMARINE';
 DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_SUBMARINE'; -- own promotion class
 INSERT INTO Unit_FreePromotions (UnitType, PromotionType) VALUES ('UNIT_SUBMARINE', 'PROMOTION_SUBMARINE');
 
@@ -74,7 +75,7 @@ INSERT INTO Unit_FreePromotions (UnitType, PromotionType) VALUES ('UNIT_MISSILE_
 
 
 /* Nuclear Submarine */
-UPDATE Units SET RangedCombat = 0, Cost = 700 WHERE Type = 'UNIT_NUCLEAR_SUBMARINE';
+UPDATE Units SET RangedCombat = 0, Cost = 700, Moves = '5' WHERE Type = 'UNIT_NUCLEAR_SUBMARINE';
 DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_NUCLEAR_SUBMARINE'; -- own promotion class
 INSERT INTO Unit_FreePromotions (UnitType, PromotionType) VALUES ('UNIT_NUCLEAR_SUBMARINE', 'PROMOTION_NUCLEAR_SUBMARINE');
 
@@ -101,6 +102,9 @@ UPDATE Units SET Cost = 300 WHERE Type = 'UNIT_ANTI_AIRCRAFT_GUN';
 DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_ANTI_AIRCRAFT_GUN'; -- own promotion class
 INSERT INTO Unit_FreePromotions (UnitType, PromotionType) VALUES ('UNIT_ANTI_AIRCRAFT_GUN', 'PROMOTION_ANTI_AIRCRAFT_GUN');
 
+/* Mobile SAM */
+DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_MOBILE_SAM'; -- own promotion class
+INSERT INTO Unit_FreePromotions (UnitType, PromotionType) VALUES ('UNIT_MOBILE_SAM', 'PROMOTION_MOBILE_SAM');
 
 /* Field Gun */
 UPDATE Units SET CombatClass = 'UNITCOMBAT_SIEGE', Range = '2', Combat = '20', RangedCombat = '60' WHERE Type = 'UNIT_ANTI_TANK_GUN';
@@ -139,6 +143,10 @@ INSERT INTO Unit_FreePromotions (UnitType, PromotionType) VALUES ('UNIT_MODERN_A
 DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_BOMBER'; -- own promotion class
 INSERT INTO Unit_FreePromotions (UnitType, PromotionType) VALUES ('UNIT_BOMBER', 'PROMOTION_BOMBER');
 
+
+/* WW1 Fighter */
+DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_TRIPLANE'; -- own promotion class
+INSERT INTO Unit_FreePromotions (UnitType, PromotionType) VALUES ('UNIT_TRIPLANE', 'PROMOTION_WW1_FIGHTER');
 
 /* Fighter */
 DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_FIGHTER'; -- own promotion class

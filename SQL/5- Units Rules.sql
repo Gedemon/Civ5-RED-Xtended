@@ -11,11 +11,13 @@
 -- Set non-embarked aircraft
 -----------------------------------------------
 
-UPDATE Units SET Special ='' WHERE Class = 'UNITCLASS_BOMBER'
-								OR Class = 'UNITCLASS_ATOMIC_BOMB'
-								OR Class = 'UNITCLASS_HEAVY_BOMBER'
-								OR Class = 'UNITCLASS_JET_BOMBER'
-								OR Class = 'UNITCLASS_WWI_BOMBER';
+INSERT INTO SpecialUnits (Type, Description, Valid, CityLoad)	VALUES ('SPECIALUNIT_LANDBASED', 'TXT_KEY_SPECIALUNIT_FIGHTER', 1, 1);
+
+UPDATE Units SET Special ='SPECIALUNIT_LANDBASED' WHERE	Class = 'UNITCLASS_BOMBER'
+												OR		Class = 'UNITCLASS_ATOMIC_BOMB'
+												OR		Class = 'UNITCLASS_HEAVY_BOMBER'
+												OR		Class = 'UNITCLASS_JET_BOMBER'
+												OR		Class = 'UNITCLASS_WWI_BOMBER';
 
 -----------------------------------------------
 -- Unit Re-Class
@@ -102,8 +104,8 @@ INSERT INTO UnitPromotions_UnitClasses (PromotionType, UnitClassType, Attack) SE
 INSERT INTO UnitPromotions_UnitClasses (PromotionType, UnitClassType, Attack) SELECT 'PROMOTION_ATTACK_SUBMARINE', Class, 66 FROM Units WHERE Domain = 'DOMAIN_SEA' OR Domain = 'DOMAIN_LAND';
 
 /* Attack promotion against Submarines for Destroyers and Missile Destroyers */
-INSERT INTO UnitPromotions_UnitClasses (PromotionType, UnitClassType, Attack) SELECT 'PROMOTION_DETROYER', Class, 100 FROM Units WHERE Class LIKE '%SUBMARINE%';
-INSERT INTO UnitPromotions_UnitClasses (PromotionType, UnitClassType, Attack) SELECT 'PROMOTION_MISSILE_DETROYER', Class, 100 FROM Units WHERE Class LIKE '%SUBMARINE%';
+INSERT INTO UnitPromotions_UnitClasses (PromotionType, UnitClassType, Attack) SELECT 'PROMOTION_DESTROYER', Class, 100 FROM Units WHERE Class LIKE '%SUBMARINE%';
+INSERT INTO UnitPromotions_UnitClasses (PromotionType, UnitClassType, Attack) SELECT 'PROMOTION_MISSILE_DESTROYER', Class, 100 FROM Units WHERE Class LIKE '%SUBMARINE%';
 
 /* "Ramming" attack promotion for Ironclad against all wooden ships */
 INSERT INTO UnitPromotions_UnitClasses (PromotionType, UnitClassType, Attack) SELECT 'PROMOTION_IRONCLAD', Class, 100 FROM Units WHERE Class = 'UNITCLASS_FRIGATE' OR Class = 'UNITCLASS_SHIPOFTHELINE' OR Class = 'UNITCLASS_CARAVEL' OR Class = 'UNITCLASS_TRIREME' OR Class = 'UNITCLASS_GALLEY' OR Class = 'UNITCLASS_QUINQUEREME' OR Class = 'UNITCLASS_GALLEASS' OR Class = 'UNITCLASS_NAU' OR Class = 'UNITCLASS_WAR_GALLEY';
@@ -111,11 +113,13 @@ INSERT INTO UnitPromotions_UnitClasses (PromotionType, UnitClassType, Attack) SE
 /* Culverin are anti-personnel, not anti-city */
 DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_CULVERIN' AND PromotionType = 'PROMOTION_CITY_SIEGE';
 
+
 -----------------------------------------------
 -- Resources
 -----------------------------------------------
 
 UPDATE Unit_ResourceQuantityRequirements SET ResourceType = 'RESOURCE_COAL' WHERE UnitType = 'UNIT_ARMORED_CRUISER';
+UPDATE Unit_ResourceQuantityRequirements SET ResourceType = 'RESOURCE_COAL' WHERE UnitType = 'UNIT_DREADNOUGHT';
 
 
 -----------------------------------------------
@@ -356,7 +360,7 @@ UPDATE Units SET ObsoleteTech =
 /* Aircraft */
 DELETE FROM Unit_ClassUpgrades WHERE
 		UnitType = 'UNIT_BOMBER'
-	OR	UnitType = 'UNIT_STRATEGIC_BOMBER'
+	OR	UnitType = 'UNIT_HEAVY_BOMBER'
 	OR	UnitType = 'UNIT_JET_BOMBER'
 	OR	UnitType = 'UNIT_FIGHTER'
 	OR	UnitType = 'UNIT_EARLY_JET_FIGHTER'
@@ -365,7 +369,7 @@ DELETE FROM Unit_ClassUpgrades WHERE
 	OR	UnitType = 'UNIT_STRIKE_FIGHTER';
 
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_BOMBER','UNITCLASS_JET_BOMBER');
-INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_STRATEGIC_BOMBER','UNITCLASS_JET_BOMBER');
+INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_HEAVY_BOMBER','UNITCLASS_JET_BOMBER');
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_JET_BOMBER','UNITCLASS_STEALTH_BOMBER');
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_FIGHTER','UNITCLASS_EARLY_JET_FIGHTER');
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_EARLY_JET_FIGHTER','UNITCLASS_JET_FIGHTER');
@@ -376,7 +380,7 @@ INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_STRIKE_FI
 UPDATE Units SET ObsoleteTech =
  (SELECT PrereqTech FROM Units WHERE (Units.Type == (SELECT DefaultUnit FROM UnitClasses WHERE UnitClasses.Type == (SELECT UnitClassType FROM Unit_ClassUpgrades WHERE UnitType == 'UNIT_BOMBER') ))) WHERE Type == 'UNIT_BOMBER';
 UPDATE Units SET ObsoleteTech =
- (SELECT PrereqTech FROM Units WHERE (Units.Type == (SELECT DefaultUnit FROM UnitClasses WHERE UnitClasses.Type == (SELECT UnitClassType FROM Unit_ClassUpgrades WHERE UnitType == 'UNIT_STRATEGIC_BOMBER') ))) WHERE Type == 'UNIT_STRATEGIC_BOMBER';
+ (SELECT PrereqTech FROM Units WHERE (Units.Type == (SELECT DefaultUnit FROM UnitClasses WHERE UnitClasses.Type == (SELECT UnitClassType FROM Unit_ClassUpgrades WHERE UnitType == 'UNIT_HEAVY_BOMBER') ))) WHERE Type == 'UNIT_HEAVY_BOMBER';
 UPDATE Units SET ObsoleteTech =
  (SELECT PrereqTech FROM Units WHERE (Units.Type == (SELECT DefaultUnit FROM UnitClasses WHERE UnitClasses.Type == (SELECT UnitClassType FROM Unit_ClassUpgrades WHERE UnitType == 'UNIT_JET_BOMBER') ))) WHERE Type == 'UNIT_JET_BOMBER';
 UPDATE Units SET ObsoleteTech =

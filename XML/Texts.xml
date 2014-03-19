@@ -55,7 +55,14 @@
 
 		<Replace Tag="TXT_KEY_TECH_GUNPOWDER_TITLE">
 			<Text>Musket</Text>
+		</Replace>		
+		<Replace Tag="TXT_KEY_TECH_STEAM_POWER_TITLE">
+			<Text>Marine Steam Engine</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_TECH_RAILROAD_TITLE">
+			<Text>Steam Locomotive</Text>
+		</Replace>
+		
 	</Language_en_US>
 	
 	<!-- ++++++++++++++++++++++ -->
@@ -63,13 +70,13 @@
 	<!-- ++++++++++++++++++++++ -->
 	<Language_en_US>
 
-		<Row Tag="TXT_KEY_TECH_WORKER_RATE">
+		<Replace Tag="TXT_KEY_TECH_WORKER_RATE">
 			<Text>Worker rate increased by {1_Num} %.</Text>
-		</Row>
+		</Replace>
 
-		<Row Tag="TXT_KEY_TECH_NETWORK_YIELDS">
+		<Replace Tag="TXT_KEY_TECH_NETWORK_YIELDS">
 			<Text>+ 2 [ICON_RESEARCH] Science for each Research Lab.</Text>
-		</Row>
+		</Replace>
 
 		<Replace Tag="TXT_KEY_TECH_BATTLESPACE_TITLE">
 			<Text>Battlespace</Text>
@@ -215,206 +222,220 @@
 		<!-- New texts -->
 
 
-		<Row Tag="TXT_KEY_PROMOTION_SPECIAL_FORCES">
+		<Replace Tag="TXT_KEY_PROMOTION_SPECIAL_FORCES">
 			<Text>Special Forces</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_SPECIAL_FORCES_DESC">
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_SPECIAL_FORCES_DESC">
 			<Text>+ 50% [ICON_STRENGTH] Defense VS [COLOR_POSITIVE_TEXT]Ranged attacks[ENDCOLOR].[NEWLINE]+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Gun units[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Armor Units[ENDCOLOR].[NEWLINE]- 50% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]Not affected by [COLOR_POSITIVE_TEXT]Zone Of Control[ENDCOLOR].[NEWLINE]May withdraw from [COLOR_POSITIVE_TEXT]Melee Attacks[ENDCOLOR].[NEWLINE]Ignore [COLOR_POSITIVE_TEXT]Terrains cost[ENDCOLOR].</Text>
-		</Row>
+		</Replace>
 
-		<Row Tag="TXT_KEY_PROMOTION_PARATROOPER">
+		<Replace Tag="TXT_KEY_PROMOTION_PARATROOPER">
 			<Text>Paratrooper</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_PARATROOPER_DESC">
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_PARATROOPER_DESC">
 			<Text>+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Gun units[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Armor Units[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]Ignore [COLOR_POSITIVE_TEXT]Terrains cost[ENDCOLOR].</Text>
-		</Row>
+		</Replace>
 
-		<Row Tag="TXT_KEY_PROMOTION_INFANTRY">
+		<Replace Tag="TXT_KEY_PROMOTION_INFANTRY">
 			<Text>Infantry</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_INFANTRY_DESC">
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_INFANTRY_DESC">
 			<Text>+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].</Text>
-		</Row>
+		</Replace>
 
-		<Row Tag="TXT_KEY_PROMOTION_ARTILLERY">
+		<Replace Tag="TXT_KEY_PROMOTION_ARTILLERY">
 			<Text>Howitzer-Guns</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_ARTILLERY_DESC">
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_ARTILLERY_DESC">
 			<Text>Can fire over obstacles.[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]May not melee attack, limited visibility.</Text>
-		</Row>
+		</Replace>
 
-		<Row Tag="TXT_KEY_PROMOTION_FIELD_GUN">
+		<Replace Tag="TXT_KEY_PROMOTION_FIELD_GUN">
 			<Text>Field Guns</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_FIELD_GUN_DESC">
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_FIELD_GUN_DESC">
 			<Text>Direct fire only.[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Armor Units[ENDCOLOR].[NEWLINE]May not melee attack, limited visibility.</Text>
-		</Row>
+		</Replace>
 
-		<Row Tag="TXT_KEY_PROMOTION_ANTI_AIRCRAFT_GUN">
+		<Replace Tag="TXT_KEY_PROMOTION_ANTI_AIRCRAFT_GUN">
 			<Text>Anti-Aircraft Guns</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_ANTI_AIRCRAFT_GUN_DESC">
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_ANTI_AIRCRAFT_GUN_DESC">
 			<Text>Can intercept [COLOR_POSITIVE_TEXT]2[ENDCOLOR] Air unit per turn.[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Air Units[ENDCOLOR].[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Armor Units[ENDCOLOR].[NEWLINE]Can't attack, limited visibility.</Text>
-		</Row>
+		</Replace>
 
-		<Row Tag="TXT_KEY_PROMOTION_LIGHT_TANK">
+		<Replace Tag="TXT_KEY_PROMOTION_MOBILE_SAM">
+			<Text>Mobile Sol-Air Missile</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_MOBILE_SAM_DESC">
+			<Text>Can intercept [COLOR_POSITIVE_TEXT]4[ENDCOLOR] Air unit per turn.[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Air Units[ENDCOLOR].[NEWLINE]Can't attack, limited visibility.</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_PROMOTION_LIGHT_TANK">
 			<Text>Light Tank</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_LIGHT_TANK_DESC">
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_LIGHT_TANK_DESC">
 			<Text>+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Gun[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Armor[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]No [COLOR_NEGATIVE_TEXT]terrain[ENDCOLOR] defensive bonus.[NEWLINE]Can [COLOR_POSITIVE_TEXT]move[ENDCOLOR] after attacking.</Text>
-		</Row>
+		</Replace>
 
-		<Row Tag="TXT_KEY_PROMOTION_WW1_TANK">
+		<Replace Tag="TXT_KEY_PROMOTION_WW1_TANK">
 			<Text>Tank</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_WW1_TANK_DESC">
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_WW1_TANK_DESC">
 			<Text>+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Gun units[ENDCOLOR].[NEWLINE]+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Fortified Units[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]No [COLOR_NEGATIVE_TEXT]terrain[ENDCOLOR] defensive bonus.</Text>
-		</Row>
+		</Replace>
 
-		<Row Tag="TXT_KEY_PROMOTION_TANK">
+		<Replace Tag="TXT_KEY_PROMOTION_TANK">
 			<Text>Tank</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_TANK_DESC">
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_TANK_DESC">
 			<Text>+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Gun units[ENDCOLOR].[NEWLINE]+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Fortified Units[ENDCOLOR].[NEWLINE]- 33% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]No [COLOR_NEGATIVE_TEXT]terrain[ENDCOLOR] defensive bonus.[NEWLINE]Can [COLOR_POSITIVE_TEXT]move[ENDCOLOR] after attacking.</Text>
-		</Row>
+		</Replace>
 
 
 		<!-- AIR -->
 
-		<Row Tag="TXT_KEY_PROMOTION_WW1_FIGHTER">
+		<Replace Tag="TXT_KEY_PROMOTION_WW1_FIGHTER">
 			<Text>Biplan Fighter</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_WW1_FIGHTER_DESC">
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_WW1_FIGHTER_DESC">
 			<Text>Can intercept [COLOR_POSITIVE_TEXT]1[ENDCOLOR] Air unit per turn.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 50% [ICON_STRENGTH] [COLOR_NEGATIVE_TEXT]Ranged[ENDCOLOR] Combat when bombing.</Text>
-		</Row>
+		</Replace>
 		
-		<Row Tag="TXT_KEY_PROMOTION_FIGHTER">
+		<Replace Tag="TXT_KEY_PROMOTION_FIGHTER">
 			<Text>Fighter</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_FIGHTER_DESC">
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_FIGHTER_DESC">
 			<Text>Can intercept [COLOR_POSITIVE_TEXT]2[ENDCOLOR] Air units per turn.[NEWLINE]+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 50% [ICON_STRENGTH] [COLOR_NEGATIVE_TEXT]Ranged[ENDCOLOR] Combat when bombing.</Text>
-		</Row>
+		</Replace>
 		
-		<Row Tag="TXT_KEY_PROMOTION_EARLY_JET_FIGHTER">
+		<Replace Tag="TXT_KEY_PROMOTION_EARLY_JET_FIGHTER">
 			<Text>Jet Fighter</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_EARLY_JET_FIGHTER_DESC">
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_EARLY_JET_FIGHTER_DESC">
 			<Text>Can intercept [COLOR_POSITIVE_TEXT]2[ENDCOLOR] Air units per turn.[NEWLINE]+ 33% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 50% [ICON_STRENGTH] [COLOR_NEGATIVE_TEXT]Ranged[ENDCOLOR] Combat when bombing.</Text>
-		</Row>
+		</Replace>
 		
-		<Row Tag="TXT_KEY_PROMOTION_JET_FIGHTER">
+		<Replace Tag="TXT_KEY_PROMOTION_JET_FIGHTER">
 			<Text>Air Superiority Fighter</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_JET_FIGHTER_DESC">
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_JET_FIGHTER_DESC">
 			<Text>Can intercept [COLOR_POSITIVE_TEXT]4[ENDCOLOR] Air units per turn.[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 50% [ICON_STRENGTH] [COLOR_NEGATIVE_TEXT]Ranged[ENDCOLOR] Combat when bombing.</Text>
-		</Row>
+		</Replace>
 
-		<Row Tag="TXT_KEY_PROMOTION_STRIKE_FIGHTER">
+		<Replace Tag="TXT_KEY_PROMOTION_STRIKE_FIGHTER">
 			<Text>Strike Fighter</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_STRIKE_FIGHTER_DESC">
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_STRIKE_FIGHTER_DESC">
 			<Text>Can intercept [COLOR_POSITIVE_TEXT]2[ENDCOLOR] Air unit per turn.[NEWLINE]+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]Full [COLOR_POSITIVE_TEXT]Ranged[ENDCOLOR] [ICON_STRENGTH] Combat when bombing.</Text>
-		</Row>
+		</Replace>
 
-		<Row Tag="TXT_KEY_PROMOTION_ATTACK_AIRCRAFT">
+		<Replace Tag="TXT_KEY_PROMOTION_ATTACK_AIRCRAFT">
 			<Text>Attack Aircraft</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_ATTACK_AIRCRAFT_DESC">
-			<Text>+ 50% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Armor[ENDCOLOR] units.[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Land[ENDCOLOR] units.[NEWLINE]+ 75% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].Full [COLOR_POSITIVE_TEXT]Ranged[ENDCOLOR] [ICON_STRENGTH] Combat when bombing.</Text>
-		</Row>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_ATTACK_AIRCRAFT_DESC">
+			<Text>+ 50% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Armor[ENDCOLOR] units.[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Land[ENDCOLOR] units.[NEWLINE]+ 75% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]Full [COLOR_POSITIVE_TEXT]Ranged[ENDCOLOR] [ICON_STRENGTH] Combat when bombing.</Text>
+		</Replace>
 
-		<Row Tag="TXT_KEY_PROMOTION_CLOSE_AIR_SUPPORT">
+		<Replace Tag="TXT_KEY_PROMOTION_CLOSE_AIR_SUPPORT">
 			<Text>Close Air Support</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CLOSE_AIR_SUPPORT_DESC">
-			<Text>+ 50% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Armor[ENDCOLOR] units.[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Land[ENDCOLOR] units.[NEWLINE]+ 75% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].Full [COLOR_POSITIVE_TEXT]Ranged[ENDCOLOR] [ICON_STRENGTH] Combat when bombing.</Text>
-		</Row>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CLOSE_AIR_SUPPORT_DESC">
+			<Text>+ 50% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Armor[ENDCOLOR] units.[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Land[ENDCOLOR] units.[NEWLINE]+ 75% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]Full [COLOR_POSITIVE_TEXT]Ranged[ENDCOLOR] [ICON_STRENGTH] Combat when bombing.</Text>
+		</Replace>
 
-		<Row Tag="TXT_KEY_PROMOTION_BOMBER">
+		<Replace Tag="TXT_KEY_PROMOTION_BOMBER">
 			<Text>Bomber</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_BOMBER_DESC">
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_BOMBER_DESC">
 			<Text>+ 20% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Armor[ENDCOLOR] units.[NEWLINE]- 50% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Sea[ENDCOLOR] units.</Text>
-		</Row>
+		</Replace>
 
-		<Row Tag="TXT_KEY_PROMOTION_JET_BOMBER">
+		<Replace Tag="TXT_KEY_PROMOTION_JET_BOMBER">
 			<Text>Fast Bomber</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_JET_BOMBER_DESC">
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_JET_BOMBER_DESC">
 			<Text>+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Armor[ENDCOLOR] units.[NEWLINE]- 50% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Sea[ENDCOLOR] units.</Text>
-		</Row>
+		</Replace>
 
-		<Row Tag="TXT_KEY_PROMOTION_HEAVY_BOMBER">
+		<Replace Tag="TXT_KEY_PROMOTION_HEAVY_BOMBER">
 			<Text>Heavy Bomber</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_HEAVY_BOMBER_DESC">
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_HEAVY_BOMBER_DESC">
 			<Text>+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 33% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Land[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Armor[ENDCOLOR] units.[NEWLINE]- 50% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Sea[ENDCOLOR] units.</Text>
-		</Row>
+		</Replace>
 
 
 		<!-- NAVAL -->
-		<Row Tag="TXT_KEY_PROMOTION_BATTLESHIP">
-			<Text>Battleship</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_BATTLESHIP_DESC">
-			<Text>Can fire over obstacles.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Air[ENDCOLOR] units.</Text>
-		</Row>
-
-		<Row Tag="TXT_KEY_PROMOTION_CARRIER">
-			<Text>Carrier</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_CARRIER_DESC">
-			<Text>Can embark 3 aircraft (More with promotions)[NEWLINE]May not attack, extended visibility.</Text>
-		</Row>
+		<Replace Tag="TXT_KEY_PROMOTION_IRONCLAD">
+			<Text>Ironclad</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_IRONCLAD_DESC">
+			<Text>+ 100% [ICON_STRENGTH] Combat when ramming [COLOR_POSITIVE_TEXT]Wooden Ships[ENDCOLOR].[NEWLINE]+ 33% [ICON_STRENGTH] Combat against [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].</Text>
+		</Replace>
 		
-		<Row Tag="TXT_KEY_PROMOTION_NUCLEAR_CARRIER">
+		<Replace Tag="TXT_KEY_PROMOTION_BATTLESHIP">
+			<Text>Battleship</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_BATTLESHIP_DESC">
+			<Text>Can fire over obstacles.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Air[ENDCOLOR] units.</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_PROMOTION_CARRIER">
 			<Text>Carrier</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_NUCLEAR_CARRIER_DESC">
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_CARRIER_DESC">
+			<Text>Can embark 3 aircraft (More with promotions)[NEWLINE]May not attack, extended visibility.</Text>
+		</Replace>
+		
+		<Replace Tag="TXT_KEY_PROMOTION_NUCLEAR_CARRIER">
+			<Text>Carrier</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_NUCLEAR_CARRIER_DESC">
 			<Text>Can embark 5 aircraft (More with promotions)[NEWLINE]May not attack, extended visibility.</Text>
-		</Row>
+		</Replace>
 
-		<Row Tag="TXT_KEY_PROMOTION_DESTROYER">
+		<Replace Tag="TXT_KEY_PROMOTION_DESTROYER">
 			<Text>Destroyer</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_DESTROYER_DESC">
-			<Text>+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Submarines[ENDCOLOR] units.[NEWLINE]Can intercept 2 [COLOR_POSITIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]50% Interception chance.</Text>
-		</Row>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_DESTROYER_DESC">
+			<Text>+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Submarines[ENDCOLOR] units.[NEWLINE]Can intercept [COLOR_POSITIVE_TEXT]2[ENDCOLOR] Air units.[NEWLINE]50% Interception chance.</Text>
+		</Replace>
 
-		<Row Tag="TXT_KEY_PROMOTION_MISSILE_DESTROYER">
+		<Replace Tag="TXT_KEY_PROMOTION_MISSILE_DESTROYER">
 			<Text>Missile Destroyer</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_MISSILE_DESTROYER_DESC">
-			<Text>Can embark 3 missiles[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Submarines[ENDCOLOR] units.[NEWLINE]Can intercept 3 [COLOR_POSITIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]100% Interception chance.</Text>
-		</Row>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_MISSILE_DESTROYER_DESC">
+			<Text>Can embark 3 missiles[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Submarines[ENDCOLOR] units.[NEWLINE]Can intercept [COLOR_POSITIVE_TEXT]3[ENDCOLOR] Air units.[NEWLINE]100% Interception chance.</Text>
+		</Replace>
 
-		<Row Tag="TXT_KEY_PROMOTION_MISSILE_CRUISER">
+		<Replace Tag="TXT_KEY_PROMOTION_MISSILE_CRUISER">
 			<Text>Missile Destroyer</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_MISSILE_CRUISER_DESC">
-			<Text>Can embark 8 missiles[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Submarines[ENDCOLOR] units.[NEWLINE]Can intercept 3 [COLOR_POSITIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]100% Interception chance.</Text>
-		</Row>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_MISSILE_CRUISER_DESC">
+			<Text>Can embark 8 missiles[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Submarines[ENDCOLOR] units.[NEWLINE]Can intercept [COLOR_POSITIVE_TEXT]3[ENDCOLOR] Air units.[NEWLINE]100% Interception chance.</Text>
+		</Replace>
 
-		<Row Tag="TXT_KEY_PROMOTION_SUBMARINE">
+		<Replace Tag="TXT_KEY_PROMOTION_SUBMARINE">
 			<Text>Submarine</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_SUBMARINE_DESC">
-			<Text>+ 33% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Embarked[ENDCOLOR] units when attacking.[NEWLINE]Invisible when not in contact with enemy units.[NEWLINE]Can move under ice.[NEWLINE]Can move after attacking.[NEWLINE]Ignore [COLOR_POSITIVE_TEXT]Enemy ZOC[ENDCOLOR].</Text>
-		</Row>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_SUBMARINE_DESC">
+			<Text>+ 33% [ICON_STRENGTH] Combat when [COLOR_POSITIVE_TEXT]Attacking[ENDCOLOR].[NEWLINE]Invisible when not in contact with enemy units.[NEWLINE]Can move under ice.[NEWLINE]Can move after attacking.[NEWLINE]Ignore [COLOR_POSITIVE_TEXT]Enemy ZOC[ENDCOLOR].</Text>
+		</Replace>
 
-		<Row Tag="TXT_KEY_PROMOTION_ATTACK_SUBMARINE">
+		<Replace Tag="TXT_KEY_PROMOTION_ATTACK_SUBMARINE">
 			<Text>Attack Submarine</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_ATTACK_SUBMARINE_DESC">
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_ATTACK_SUBMARINE_DESC">
 			<Text>Can embark 3 missiles[NEWLINE]+ 66% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Embarked[ENDCOLOR] units when attacking.[NEWLINE]Invisible when not in contact with enemy units.[NEWLINE]Can move under ice.[NEWLINE]Can move after attacking.[NEWLINE]Ignore [COLOR_POSITIVE_TEXT]Enemy ZOC[ENDCOLOR].</Text>
-		</Row>
+		</Replace>
 
-		<Row Tag="TXT_KEY_PROMOTION_NUCLEAR_SUBMARINE">
+		<Replace Tag="TXT_KEY_PROMOTION_NUCLEAR_SUBMARINE">
 			<Text>Nuclear Submarine</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_NUCLEAR_SUBMARINE_DESC">
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_NUCLEAR_SUBMARINE_DESC">
 			<Text>Can embark 8 missiles[NEWLINE]Invisible when not in contact with enemy units.[NEWLINE]Can move under ice.[NEWLINE]Can only defend.[NEWLINE]Ignore [COLOR_POSITIVE_TEXT]Enemy ZOC[ENDCOLOR].</Text>
-		</Row>
+		</Replace>
 
 
 	</Language_en_US>

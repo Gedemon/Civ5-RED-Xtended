@@ -90,8 +90,6 @@
 	<!-- **** use PROMOTION_[unit/class key name] for automatic addition to freepromotion list ***** -->
 	<!-- ******************************************************************************************* -->
 
-<!-- <LostWithUpgrade>true</LostWithUpgrade> -->
-
 	<!-- SPECIAL FORCES (use Lua for effect) -->
 	<UnitPromotions>
 		<Row>
@@ -101,6 +99,7 @@
 			<Help>TXT_KEY_PROMOTION_SPECIAL_FORCES_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<!-- <LostWithUpgrade>true</LostWithUpgrade> -->
 			<IgnoreTerrainCost>true</IgnoreTerrainCost>
 			<IgnoreZOC>true</IgnoreZOC>
 			<OnlyDefensive>true</OnlyDefensive>
@@ -136,6 +135,7 @@
 			<Help>TXT_KEY_PROMOTION_PARATROOPER_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<IgnoreTerrainCost>true</IgnoreTerrainCost>
 			<CityAttack>-25</CityAttack>
 			<PortraitIndex>58</PortraitIndex>
@@ -166,6 +166,7 @@
 			<Help>TXT_KEY_PROMOTION_INFANTRY_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<!-- <LostWithUpgrade>true</LostWithUpgrade> we want to keep this one for the modern infantry (aka Marines) -->
 			<CityAttack>25</CityAttack>
 			<PortraitIndex>58</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
@@ -182,11 +183,13 @@
 			<Help>TXT_KEY_PROMOTION_ARTILLERY_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<CityAttack>100</CityAttack>
 			<RangeAttackIgnoreLOS>1</RangeAttackIgnoreLOS>
 			<OnlyDefensive>1</OnlyDefensive> 
 			<NoDefensiveBonus>0</NoDefensiveBonus>			<!-- default = 1 -->
 			<InterceptChanceChange>0</InterceptChanceChange>
+			<MustSetUpToRangedAttack>1</MustSetUpToRangedAttack>
 			<VisibilityChange>-1</VisibilityChange>
 			<PortraitIndex>58</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
@@ -203,8 +206,10 @@
 			<Help>TXT_KEY_PROMOTION_FIELD_GUN_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<OnlyDefensive>1</OnlyDefensive>
 			<InterceptChanceChange>0</InterceptChanceChange>
+			<MustSetUpToRangedAttack>1</MustSetUpToRangedAttack>
 			<VisibilityChange>-1</VisibilityChange>
 			<PortraitIndex>58</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
@@ -228,6 +233,7 @@
 			<Help>TXT_KEY_PROMOTION_ANTI_AIRCRAFT_GUN_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<OnlyDefensive>1</OnlyDefensive>
 			<InterceptChanceChange>100</InterceptChanceChange>
 			<NumInterceptionChange>1</NumInterceptionChange>
@@ -251,6 +257,33 @@
 			<Modifier>100</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
+
+	<!-- MOBILE SAM -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_MOBILE_SAM</Type>
+			<Description>TXT_KEY_PROMOTION_MOBILE_SAM</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_MOBILE_SAM</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_MOBILE_SAM_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<OnlyDefensive>1</OnlyDefensive>
+			<InterceptChanceChange>100</InterceptChanceChange>
+			<NumInterceptionChange>3</NumInterceptionChange>
+			<VisibilityChange>-1</VisibilityChange>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Domains>
+		<Row>
+			<PromotionType>PROMOTION_MOBILE_SAM</PromotionType>
+			<DomainType>DOMAIN_AIR</DomainType>
+			<Modifier>100</Modifier>
+		</Row>
+	</UnitPromotions_Domains>
 	
 	<!-- LIGHT TANK -->
 	<UnitPromotions>
@@ -261,6 +294,7 @@
 			<Help>TXT_KEY_PROMOTION_LIGHT_TANK_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<NoDefensiveBonus>true</NoDefensiveBonus>
 			<CanMoveAfterAttacking>true</CanMoveAfterAttacking>
 			<CityAttack>-25</CityAttack>
@@ -291,6 +325,7 @@
 			<Help>TXT_KEY_PROMOTION_WW1_TANK_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<AttackFortifiedMod>25</AttackFortifiedMod>
 			<NoDefensiveBonus>true</NoDefensiveBonus>
 			<CityAttack>-25</CityAttack>
@@ -316,6 +351,7 @@
 			<Help>TXT_KEY_PROMOTION_TANK_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<NoDefensiveBonus>true</NoDefensiveBonus>
 			<CanMoveAfterAttacking>true</CanMoveAfterAttacking>
 			<AttackFortifiedMod>25</AttackFortifiedMod>
@@ -342,6 +378,7 @@
 			<Help>TXT_KEY_PROMOTION_WW1_FIGHTER_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<RangedAttackModifier>-50</RangedAttackModifier>
 			<CityAttack>-25</CityAttack>
 			<InterceptChanceChange>100</InterceptChanceChange>
@@ -361,6 +398,7 @@
 			<Help>TXT_KEY_PROMOTION_FIGHTER_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<RangedAttackModifier>-50</RangedAttackModifier>
 			<CityAttack>-25</CityAttack>
 			<InterceptChanceChange>100</InterceptChanceChange>
@@ -388,6 +426,7 @@
 			<Help>TXT_KEY_PROMOTION_EARLY_JET_FIGHTER_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<CityAttack>-25</CityAttack>
 			<RangedAttackModifier>-50</RangedAttackModifier>
 			<NumInterceptionChange>2</NumInterceptionChange>
@@ -415,6 +454,7 @@
 			<Help>TXT_KEY_PROMOTION_JET_FIGHTER_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<CityAttack>-25</CityAttack>
 			<RangedAttackModifier>-50</RangedAttackModifier>
 			<NumInterceptionChange>3</NumInterceptionChange>
@@ -442,6 +482,7 @@
 			<Help>TXT_KEY_PROMOTION_STRIKE_FIGHTER_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<RangedAttackModifier>0</RangedAttackModifier>
 			<NumInterceptionChange>1</NumInterceptionChange>
 			<InterceptChanceChange>100</InterceptChanceChange>
@@ -469,6 +510,7 @@
 			<Help>TXT_KEY_PROMOTION_ATTACK_AIRCRAFT_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<CityAttack>-25</CityAttack>
 			<PortraitIndex>58</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
@@ -504,6 +546,7 @@
 			<Help>TXT_KEY_PROMOTION_CLOSE_AIR_SUPPORT_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<CityAttack>-25</CityAttack>
 			<PortraitIndex>58</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
@@ -540,6 +583,7 @@
 			<Help>TXT_KEY_PROMOTION_BOMBER_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<CityAttack>20</CityAttack>
 			<PortraitIndex>58</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
@@ -570,6 +614,7 @@
 			<Help>TXT_KEY_PROMOTION_JET_BOMBER_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<CityAttack>25</CityAttack>
 			<PortraitIndex>58</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
@@ -601,6 +646,7 @@
 			<Help>TXT_KEY_PROMOTION_HEAVY_BOMBER_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<CityAttack>25</CityAttack>
 			<PortraitIndex>58</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
@@ -637,6 +683,7 @@
 			<Help>TXT_KEY_PROMOTION_BATTLESHIP_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<RangeAttackIgnoreLOS>1</RangeAttackIgnoreLOS>
 			<OnlyDefensive>1</OnlyDefensive>
 			<PortraitIndex>58</PortraitIndex>
@@ -661,6 +708,7 @@
 			<Help>TXT_KEY_PROMOTION_CARRIER_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<CargoChange>3</CargoChange>
 			<Recon>true</Recon>
 			<OnlyDefensive>1</OnlyDefensive>
@@ -679,6 +727,7 @@
 			<Help>TXT_KEY_PROMOTION_IRONCLAD_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<CityAttack>33</CityAttack>
 			<PortraitIndex>58</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
@@ -695,6 +744,7 @@
 			<Help>TXT_KEY_PROMOTION_NUCLEAR_CARRIER_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<CargoChange>5</CargoChange>
 			<Recon>true</Recon>
 			<OnlyDefensive>1</OnlyDefensive>
@@ -713,7 +763,7 @@
 			<Help>TXT_KEY_PROMOTION_DESTROYER_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
-			<OnlyDefensive>1</OnlyDefensive>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<InterceptChanceChange>50</InterceptChanceChange>
 			<NumInterceptionChange>1</NumInterceptionChange>
 			<PortraitIndex>58</PortraitIndex>
@@ -731,6 +781,7 @@
 			<Help>TXT_KEY_PROMOTION_MISSILE_DESTROYER_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<CargoChange>3</CargoChange>
 			<InterceptChanceChange>100</InterceptChanceChange>
 			<NumInterceptionChange>2</NumInterceptionChange>
@@ -749,6 +800,7 @@
 			<Help>TXT_KEY_PROMOTION_MISSILE_CRUISER_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<OnlyDefensive>1</OnlyDefensive>
 			<CargoChange>8</CargoChange>
 			<InterceptChanceChange>100</InterceptChanceChange>
@@ -768,6 +820,8 @@
 			<Help>TXT_KEY_PROMOTION_SUBMARINE_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<RivalTerritory>true</RivalTerritory>
 			<OnlyDefensive>1</OnlyDefensive>
 			<Invisible>INVISIBLE_SUBMARINE</Invisible>
 			<CanMoveImpassable>true</CanMoveImpassable>
@@ -788,6 +842,8 @@
 			<Help>TXT_KEY_PROMOTION_ATTACK_SUBMARINE_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<RivalTerritory>true</RivalTerritory>
 			<OnlyDefensive>1</OnlyDefensive>
 			<Invisible>INVISIBLE_SUBMARINE</Invisible>
 			<CargoChange>3</CargoChange>
@@ -809,6 +865,8 @@
 			<Help>TXT_KEY_PROMOTION_NUCLEAR_SUBMARINE_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<RivalTerritory>true</RivalTerritory>
 			<OnlyDefensive>1</OnlyDefensive>
 			<CargoChange>8</CargoChange>
 			<Invisible>INVISIBLE_SUBMARINE</Invisible>
