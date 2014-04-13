@@ -261,14 +261,14 @@
 			<Text>Anti-Aircraft Guns</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_ANTI_AIRCRAFT_GUN_DESC">
-			<Text>Can intercept [COLOR_POSITIVE_TEXT]2[ENDCOLOR] Air unit per turn.[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Air Units[ENDCOLOR].[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Armor Units[ENDCOLOR].[NEWLINE]Can't attack, limited visibility.</Text>
+			<Text>Can intercept [COLOR_POSITIVE_TEXT]2[ENDCOLOR] Air unit per turn.[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Air Units[ENDCOLOR].[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Helicopter Units[ENDCOLOR].[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Armor Units[ENDCOLOR].[NEWLINE]Can't attack, limited visibility.</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_PROMOTION_MOBILE_SAM">
 			<Text>Mobile Sol-Air Missile</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_MOBILE_SAM_DESC">
-			<Text>Can intercept [COLOR_POSITIVE_TEXT]4[ENDCOLOR] Air unit per turn.[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Air Units[ENDCOLOR].[NEWLINE]Can't attack, limited visibility.</Text>
+			<Text>Can intercept [COLOR_POSITIVE_TEXT]4[ENDCOLOR] Air unit per turn.[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Air Units[ENDCOLOR].[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Helicopter Units[ENDCOLOR].[NEWLINE]Can't attack, limited visibility.</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_PROMOTION_LIGHT_TANK">
@@ -320,7 +320,7 @@
 			<Text>Air Superiority Fighter</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_JET_FIGHTER_DESC">
-			<Text>Can intercept [COLOR_POSITIVE_TEXT]4[ENDCOLOR] Air units per turn.[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 50% [ICON_STRENGTH] [COLOR_NEGATIVE_TEXT]Ranged[ENDCOLOR] Combat when bombing.</Text>
+			<Text>Can intercept [COLOR_POSITIVE_TEXT]4[ENDCOLOR] Air units per turn.[NEWLINE]+ 50% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 50% [ICON_STRENGTH] [COLOR_NEGATIVE_TEXT]Ranged[ENDCOLOR] Combat when bombing.</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_PROMOTION_STRIKE_FIGHTER">

@@ -107,6 +107,7 @@
 			<RangedDefenseMod>50</RangedDefenseMod>
 			<CityAttack>-50</CityAttack>
 			<ExtraWithdrawal>80</ExtraWithdrawal>
+			<DropRange>15</DropRange>
 			<PortraitIndex>58</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
 			<!-- make it ignored by flag promotion -->
@@ -138,6 +139,7 @@
 			<LostWithUpgrade>true</LostWithUpgrade>
 			<IgnoreTerrainCost>true</IgnoreTerrainCost>
 			<CityAttack>-25</CityAttack>
+			<DropRange>9</DropRange>
 			<PortraitIndex>58</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
 			<!-- make it ignored by flag promotion -->
@@ -249,6 +251,11 @@
 			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
 			<Modifier>100</Modifier>
 		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ANTI_AIRCRAFT_GUN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+			<Modifier>100</Modifier>
+		</Row>
 	</UnitPromotions_UnitCombatMods>
 	<UnitPromotions_Domains>
 		<Row>
@@ -277,6 +284,13 @@
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 		</Row>
 	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_MOBILE_SAM</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+			<Modifier>100</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
 	<UnitPromotions_Domains>
 		<Row>
 			<PromotionType>PROMOTION_MOBILE_SAM</PromotionType>
@@ -469,7 +483,7 @@
 		<Row>
 			<PromotionType>PROMOTION_JET_FIGHTER</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>100</Modifier>
+			<Modifier>50</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
 
@@ -573,6 +587,40 @@
 		</Row>
 	</UnitPromotions_UnitCombatMods>
 
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_JET_ATTACK_AIRCRAFT</Type>
+			<Description>TXT_KEY_PROMOTION_CLOSE_AIR_SUPPORT</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_CLOSE_AIR_SUPPORT</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_CLOSE_AIR_SUPPORT_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<CityAttack>-25</CityAttack>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Domains>
+		<Row>
+			<PromotionType>PROMOTION_JET_ATTACK_AIRCRAFT</PromotionType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<Modifier>100</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_JET_ATTACK_AIRCRAFT</PromotionType>
+			<DomainType>DOMAIN_SEA</DomainType>
+			<Modifier>75</Modifier>
+		</Row>
+	</UnitPromotions_Domains>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_JET_ATTACK_AIRCRAFT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+			<Modifier>50</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
 
 	<!-- BOMBER -->
 	<UnitPromotions>

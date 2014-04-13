@@ -101,10 +101,12 @@ INSERT INTO Unit_FreePromotions (UnitType, PromotionType) VALUES ('UNIT_ARTILLER
 UPDATE Units SET Cost = 300 WHERE Type = 'UNIT_ANTI_AIRCRAFT_GUN';
 DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_ANTI_AIRCRAFT_GUN'; -- own promotion class
 INSERT INTO Unit_FreePromotions (UnitType, PromotionType) VALUES ('UNIT_ANTI_AIRCRAFT_GUN', 'PROMOTION_ANTI_AIRCRAFT_GUN');
+UPDATE Unit_Flavors SET Flavor = 10 WHERE UnitType = 'UNIT_ANTI_AIRCRAFT_GUN' AND FlavorType = 'FLAVOR_ANTIAIR';
 
 /* Mobile SAM */
 DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_MOBILE_SAM'; -- own promotion class
 INSERT INTO Unit_FreePromotions (UnitType, PromotionType) VALUES ('UNIT_MOBILE_SAM', 'PROMOTION_MOBILE_SAM');
+UPDATE Unit_Flavors SET Flavor = 15 WHERE UnitType = 'UNIT_MOBILE_SAM' AND FlavorType = 'FLAVOR_ANTIAIR';
 
 /* Field Gun */
 UPDATE Units SET CombatClass = 'UNITCOMBAT_SIEGE', Range = '2', Combat = '20', RangedCombat = '60' WHERE Type = 'UNIT_ANTI_TANK_GUN';
@@ -126,6 +128,9 @@ INSERT INTO Unit_FreePromotions (UnitType, PromotionType) VALUES ('UNIT_PARATROO
 
 /* Marines */
 UPDATE Units SET Combat = '85' WHERE Type = 'UNIT_MARINE';
+
+/* Gunship */
+UPDATE Units SET Combat = '80' WHERE Type = 'UNIT_HELICOPTER_GUNSHIP';
 
 
 /* Main Battle Tank */

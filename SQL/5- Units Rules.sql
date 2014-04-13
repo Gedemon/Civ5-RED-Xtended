@@ -35,7 +35,7 @@ INSERT INTO Civilization_UnitClassOverrides (CivilizationType, UnitClassType, Un
 
 /* Ship of the Line */
 INSERT INTO UnitClasses (Type, Description, DefaultUnit) VALUES ('UNITCLASS_SHIPOFTHELINE','TXT_KEY_UNIT_ENGLISH_SHIPOFTHELINE','UNIT_ENGLISH_SHIPOFTHELINE');
-UPDATE Units SET Class ='UNITCLASS_SHIPOFTHELINE', PrereqTech = 'TECH_MILITARY_SCIENCE', Cost = 250 WHERE Type = 'UNIT_ENGLISH_SHIPOFTHELINE';
+UPDATE Units SET Class ='UNITCLASS_SHIPOFTHELINE', PrereqTech = 'TECH_MILITARY_SCIENCE', Moves = '4', Cost = 250 WHERE Type = 'UNIT_ENGLISH_SHIPOFTHELINE';
 INSERT INTO Civilization_UnitClassOverrides (CivilizationType, UnitClassType, UnitType) VALUES ('CIVILIZATION_BARBARIAN','UNITCLASS_SHIPOFTHELINE',NULL);
 
 /* Privateer & Sea Beggar (only for barbarians) */
@@ -120,6 +120,7 @@ DELETE FROM Unit_FreePromotions WHERE UnitType = 'UNIT_CULVERIN' AND PromotionTy
 
 UPDATE Unit_ResourceQuantityRequirements SET ResourceType = 'RESOURCE_COAL' WHERE UnitType = 'UNIT_ARMORED_CRUISER';
 UPDATE Unit_ResourceQuantityRequirements SET ResourceType = 'RESOURCE_COAL' WHERE UnitType = 'UNIT_DREADNOUGHT';
+--INSERT INTO Unit_ResourceQuantityRequirements (UnitType, ResourceType, Cost) VALUES ('UNIT_NUCLEAR_CARRIER' ,'RESOURCE_URANIUM', 1); -- Wait... What about the nuclear submarine ?
 
 
 -----------------------------------------------
@@ -238,6 +239,7 @@ DELETE FROM Unit_ClassUpgrades WHERE
 		UnitType = 'UNIT_MUSKETMAN'
 	OR	UnitType = 'UNIT_LINE_INFANTRY'
 	OR	UnitType = 'UNIT_INFANTRY'
+	OR	UnitType = 'UNIT_GERMAN_LANDSKNECHT'
 	OR	UnitType = 'UNIT_PIKEMAN'
 	OR	UnitType = 'UNIT_MOTORIZED_INFANTRY'
 	OR	UnitType = 'UNIT_MECHANIZED_INFANTRY';
@@ -246,8 +248,10 @@ INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_MUSKETMAN
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_LINE_INFANTRY','UNITCLASS_RIFLEMAN');
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_INFANTRY','UNITCLASS_MARINE');
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_PIKEMAN','UNITCLASS_LINE_INFANTRY');
+INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_GERMAN_LANDSKNECHT','UNITCLASS_LINE_INFANTRY');
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_MOTORIZED_INFANTRY','UNITCLASS_MECHANIZED_INFANTRY');
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_MECHANIZED_INFANTRY','UNITCLASS_MECH');
+INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_MARINE','UNITCLASS_XCOM_SQUAD');
 
 UPDATE Units SET ObsoleteTech =
  (SELECT PrereqTech FROM Units WHERE (Units.Type == (SELECT DefaultUnit FROM UnitClasses WHERE UnitClasses.Type == (SELECT UnitClassType FROM Unit_ClassUpgrades WHERE UnitType == 'UNIT_MUSKETMAN') ))) WHERE Type == 'UNIT_MUSKETMAN';
@@ -288,6 +292,7 @@ INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_GALLEASS'
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_PORTUGUESE_NAU','UNITCLASS_SHIPOFTHELINE');
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_ENGLISH_SHIPOFTHELINE','UNITCLASS_DREADNOUGHT');
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_DREADNOUGHT','UNITCLASS_BATTLESHIP');
+INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_BATTLESHIP','UNITCLASS_MISSILE_CRUISER');
 
 UPDATE Units SET ObsoleteTech =
  (SELECT PrereqTech FROM Units WHERE (Units.Type == (SELECT DefaultUnit FROM UnitClasses WHERE UnitClasses.Type == (SELECT UnitClassType FROM Unit_ClassUpgrades WHERE UnitType == 'UNIT_GALLEASS') ))) WHERE Type == 'UNIT_GALLEASS';
@@ -374,7 +379,7 @@ INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_JET_BOMBE
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_FIGHTER','UNITCLASS_EARLY_JET_FIGHTER');
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_EARLY_JET_FIGHTER','UNITCLASS_JET_FIGHTER');
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_JET_FIGHTER','UNITCLASS_STEALTH_FIGHTER');
-INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_ATTACK_AIRCRAFT','UNIT_JET_ATTACK_AIRCRAFT');
+INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_ATTACK_AIRCRAFT','UNITCLASS_JET_ATTACK_AIRCRAFT');
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType) VALUES ('UNIT_STRIKE_FIGHTER','UNITCLASS_STEALTH_FIGHTER');
 
 UPDATE Units SET ObsoleteTech =
